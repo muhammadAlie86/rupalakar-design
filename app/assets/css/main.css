@@ -1,1 +1,9 @@
 @import "tailwindcss";
+html {
+  scroll-behavior: smooth;
+}
+
+/* Cara menghilangkan scrollbar abu-abu di kanan agar bersih seperti desain Anda */
+::-webkit-scrollbar {
+  display: none;
+}

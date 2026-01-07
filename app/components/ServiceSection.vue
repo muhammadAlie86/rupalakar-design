@@ -1,5 +1,5 @@
 <template>
-  <section id="service" class="bg-brand-background selection:bg-[#D34010] selection:text-white py-32">
+  <section class="bg-[#F9EBEA] selection:bg-[#D34010] selection:text-white py-32">
     <div class="mx-auto max-w-6xl px-6">
       
       <header class="mb-20 text-left flex flex-col items-start">

@@ -8,7 +8,7 @@
       />
     </div>
     
-    <span class="text-xl md:text-2xl font-raleway tracking-tighter text-[#D34010] leading-none">
+    <span class="text-xl md:text-2xl font-raleway tracking-tighter font-bold text-[#D34010] leading-none">
       rupalakar
     </span>
   </div>

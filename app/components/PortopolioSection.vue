@@ -1,22 +1,9 @@
 <template>
-  <section class="bg-brand-background py-32">
+  <section class="bg-[#F9EBEA] py-32">
     <div class="mx-auto max-w-6xl px-6">
 
-      <!-- SLIDER -->
-      <UCarousel
-        :items="slides"
-        arrows
-        indicators
-        class="mb-32 overflow-hidden rounded-2xl border border-gray-900"
-      >
-        <template #default="{ item }">
-          <img
-            :src="item"
-            alt="Portfolio slide"
-            class="h-[360px] w-full object-cover"
-          />
-        </template>
-      </UCarousel>
+      
+      <HomeCarouselSection :slides="slides" />
 
       <!-- TITLE + GRID -->
       <div class="relative">

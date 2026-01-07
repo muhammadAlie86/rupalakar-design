@@ -9,7 +9,8 @@
           <span class="text-[#D34010]"> Kami partner berpikir visualmu.</span>
         </h1>
         
-        <p class="text-lg sm:text-xl md:text-2xl text-gray-800 w-full leading-relaxed font-medium">
+        
+        <p class="mt-8 text-lg md:text-2xl text-gray-900 leading-relaxed max-w-2xl font-medium">
           Kami hadir bukan untuk "menghasilkan desain", 
           tapi untuk membantu brand memahami dirinya dan berbicara dengan cara yang lebih jernih.
         </p>

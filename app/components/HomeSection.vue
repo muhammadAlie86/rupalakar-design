@@ -1,10 +1,9 @@
 <template>
-  <section class="bg-brand-background font-raleway overflow-x-hidden">
+  <section class="bg-[#F9EBEA] font-raleway overflow-x-hidden">
 
     <div class="mx-auto max-w-6xl px-6 pt-16"> 
       <HomeCarouselSection :slides="heroSlides" />
-
-      <div class="mt-12 mb-16 px-12" data-aos="fade-up"> 
+      <div class="mt-12 mb-16 px-12"> 
         <div class="relative group">
           <UCarousel
             :items="logos"
@@ -16,7 +15,7 @@
             arrows
           >
             <template #default="{ item }">
-              <div class="logo-card h-20 w-full flex items-center justify-center rounded-xl border border-gray-200 bg-white shadow-sm opacity-0">
+              <div class="logo-card h-20 w-full flex items-center justify-center rounded-xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow">
                 <span class="text-gray-600 font-medium">{{ item }}</span>
               </div>
             </template>
@@ -36,26 +35,35 @@
         </div>
       </div>
 
-      <div class="mt-16 mb-24 grid items-center gap-10 lg:grid-cols-2">
-        <div class="text-left" data-aos="fade-right">
-          <h1 class="text-3xl md:text-5xl font-extrabold leading-tight text-gray-900">
-            We think in Visual<br />
-            We <span class="text-[#D34010]">Design for Impact</span>
-          </h1>
-          <p class="mt-4 md:text-xl max-w-md text-base text-gray-800 font-medium">
-              Rupalakar adalah studio pemikir visual.
-              Kami membantu brand memahami dirinya
-              sebelum berbicara ke dunia.
-          </p>
-          <UButton size="lg" class="mt-6 bg-[#D34010] text-white">Mulai Percakapan</UButton>
-        </div>
+      
+      <div class="mt-8 mb-8 grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
+  
+      <div class="text-left" data-aos="fade-up"> <h1 class="text-3xl md:text-5xl font-extrabold leading-tight text-gray-900 uppercase">
+          We think in Visual<br />
+          We <span class="text-[#D34010]">Design for Impact</span>
+        </h1>
+        
+        <p class="mt-6 text-lg md:text-2xl text-gray-900 leading-relaxed max-w-2xl font-medium">
+          Rupalakar adalah studio pemikir visual.
+          Kami membantu brand memahami dirinya sebelum berbicara ke dunia.
+        </p>
 
-        <div class="mt-8 lg:mt-0 flex justify-center lg:justify-end" data-aos="fade-left">
-          <div class="flex h-64 w-64 md:h-72 md:w-72 items-center justify-center rounded-xl bg-gray-900 text-white shadow-xl">
-            GIF / Visual
-          </div>
+        <UButton 
+          size="lg" 
+          class="bg-[#D34010] hover:bg-[#b0350d] text-white mt-8 mb-8 md:mb-24 font-bold uppercase tracking-wider px-10 py-4 rounded-none transition-all active:scale-95"
+        >
+          Mulai Percakapan
+        </UButton>
+      </div>
+
+      <div class="flex justify-center lg:justify-end" data-aos="fade-up" data-aos-delay="200">
+        <div class="relative flex h-64 w-64 md:h-80 md:w-80 items-center justify-center rounded-xl bg-gray-900 text-white shadow-2xl">
+          <span class="font-bold tracking-widest opacity-50 uppercase text-xs">GIF / VISUAL</span>
+          
+          <div class="absolute inset-0 border-2 border-[#D34010]/20 rounded-xl"></div>
         </div>
       </div>
+    </div>
     </div>
 
     <div data-aos="fade-up" data-aos-delay="100">
@@ -88,7 +96,7 @@ const logos = ['Logo 1', 'Logo 2', 'Logo 3', 'Logo 4', 'Logo 5']
 onMounted(() => {
   AOS.init({
     duration: 1000, // Kecepatan animasi (1 detik)
-    once: false,     // Set ke true jika ingin animasi hanya jalan 1x
+    once: true,     // Set ke true jika ingin animasi hanya jalan 1x
     mirror: true,    // Animasi akan jalan lagi jika kita scroll balik ke atas
     offset: 120,     // Jarak (px) dari elemen asli untuk trigger animasi
   })

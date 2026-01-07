@@ -1,10 +1,7 @@
 <script setup>
-
 </script>
-
 <template>
   <div>
-      <HomeSection/>
+    <ConsulSection/>
   </div>
 </template>
-

@@ -16,8 +16,7 @@
           v-for="item in navItems"
           :key="item.to"
           :to="item.to"
-          class="font-raleway text-sm font-bold uppercase
-                 hover:text-brand-orange"
+          class="font-raleway text-sm font-bold uppercase transition-colors duration-300 hover:text-[#D34010]"
         >
           {{ item.label }}
         </NuxtLink>
@@ -25,34 +24,26 @@
 
       <!-- MOBILE BUTTON -->
       <UButton
-        icon="i-heroicons-bars-3-20-solid"
-        variant="ghost"
-        class="md:hidden"
-        @click="isOpen = true"
-      />
+  :icon="isOpen ? 'i-heroicons-x-mark-20-solid' : 'i-heroicons-bars-3-20-solid'"
+  variant="ghost"
+  color="gray"
+  class="md:hidden z-[60]" 
+  aria-label="Toggle Menu"
+  @click="isOpen = !isOpen"
+/>
     </UContainer>
   </header>
 
   <!-- MOBILE MENU -->
   <USlideover v-if="isOpen" v-model="isOpen" class="md:hidden">
-    <UCard class="flex flex-col flex-1 bg-brand-background">
-      <template #header>
-        <div class="flex items-center justify-between">
-          <AppLogo />
-          <UButton
-            icon="i-heroicons-x-mark-20-solid"
-            variant="ghost"
-            @click="isOpen = false"
-          />
-        </div>
-      </template>
+    <UCard class="flex flex-col flex-1 bg-[#F9EBEA]'">
 
       <nav class="flex flex-col py-6">
         <NuxtLink
           v-for="item in navItems"
           :key="item.to"
           :to="item.to"
-          class="py-4 text-lg font-bold hover:text-brand-orange"
+          class="py-4 text-lg font-bold transition-colors duration-300 hover:text-[#D34010]"
           @click="isOpen = false"
         >
           {{ item.label }}
@@ -63,11 +54,14 @@
 </template>
 
 <script setup>
+  import { ref } from 'vue' 
 const isOpen = ref(false)
 
 const navItems = [
   { label: 'Home', to: '/' },
   { label: 'Service', to: '/service' },
-  { label: 'Portfolio', to: '/portpolio' }
+  { label: 'Portopolio', to: '/portopolio' },
+  { label: 'Contact', to: '/contact' },
+  { label: 'Konsultasi', to: '/consult' }
 ]
 </script>
