@@ -4,9 +4,9 @@
 
       <!-- HEADER -->
       <div class="mb-24 max-w-xl">
-        <h2 class="text-4xl font-extrabold tracking-tight text-gray-900">
-          <span class="text-brand-orange">WHAT</span> WE DO
-        </h2>
+        <h2 class="text-3xl md:text-5xl  uppercase tracking-tighter font-medium" >
+        <span class="text-[#D34010] font-black">WHAT</span> WE DO
+      </h2>
 
         <p class="mt-6 text-gray-700 leading-relaxed">
           Rupalakar adalah studio pemikir visual.

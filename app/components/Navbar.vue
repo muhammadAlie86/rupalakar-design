@@ -1,10 +1,11 @@
 <template>
   <header
-    class="sticky top-0 z-50 w-full
-           bg-brand-background/90 backdrop-blur-md
-           border-b border-orange-200"
-  >
-    <UContainer class="flex items-center justify-between py-4">
+  class="sticky top-0 z-50 w-full
+         bg-brand-background/90 backdrop-blur-md
+         border-b border-orange-200"
+         >
+  <UContainer class="flex items-center justify-between py-4 px-4 md:px-8 lg:px-12">
+
 
       <!-- LOGO -->
       <AppLogo />
@@ -67,6 +68,6 @@ const isOpen = ref(false)
 const navItems = [
   { label: 'Home', to: '/' },
   { label: 'Service', to: '/service' },
-  { label: 'Portfolio', to: '/portfolio' }
+  { label: 'Portfolio', to: '/portpolio' }
 ]
 </script>

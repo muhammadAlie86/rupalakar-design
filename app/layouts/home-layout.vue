@@ -8,7 +8,7 @@
 
     <!-- PAGE CONTENT -->
     <main class="flex-1">
-      <slot />
+      <NuxtPage />
     </main>
 
     <!-- FOOTER -->
