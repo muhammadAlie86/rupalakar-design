@@ -8,7 +8,13 @@
 
 
       <!-- LOGO -->
-      <AppLogo />
+      <div class="w-[150px] h-12 flex-shrink-0">
+      <img 
+        src="/assets/images/ic_logo.png" 
+        alt="R" 
+        class="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110" 
+      />
+    </div>
 
       <!-- DESKTOP NAV -->
       <nav class="hidden md:flex items-center gap-10">

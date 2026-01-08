@@ -1,15 +1,13 @@
 <template>
-  <div class="flex items-center gap-2 group cursor-pointer font-raleway">
-    <div class="w-8 h-8 md:w-9 md:h-9 flex-shrink-0">
+  <div class="flex items-center group cursor-pointer font-raleway">
+    
+    <div class="w-[150px] h-[150px] flex-shrink-0">
       <img 
-        src="/assets/images/icon_r.png" 
+        src="/assets/images/ic_logo.png" 
         alt="R" 
-        class="w-full h-full object-contain transition-transform group-hover:scale-105" 
+        class="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110" 
       />
     </div>
     
-    <span class="text-xl md:text-2xl font-raleway tracking-tighter font-bold text-[#D34010] leading-none">
-      rupalakar
-    </span>
   </div>
 </template>

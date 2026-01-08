@@ -27,10 +27,16 @@ const teams = [
 
 <template>
   <section class="bg-[#F9EFEA] py-24">
+    <div class="mb-12 text-center">
+        <h2 class="text-2xl md:text-4xl text-[#D34010] leading-tight max-w-4xl mx-auto font-medium">
+          Di Belakang Layar
+        </h2>
+      </div>
     <div class="max-w-7xl mx-auto px-6">
+      
 
       <!-- GRID 3 -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-20">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
 
         <div
   v-for="team in teams"

@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col gap-4">
     <div class="space-y-0">
-      <h3 class="text-2xl md:text-3xl font-black text-[#D34010] leading-tight uppercase">
+      <h3 class="text-2xl md:text-3xl font-black text-[#D34010] leading-tight">
         {{ title }}
       </h3>
       <p class="text-2xl md:text-3xl font-black text-[#D34010]">
