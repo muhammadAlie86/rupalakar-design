@@ -63,7 +63,7 @@ const data = [
             </div>
 
             <div class="flex-1">
-              <h3 class="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-2">
+              <h3 class="text-4xl md:text-5xl font-serif font-bold text-black mb-2">
                 {{ item.name }}
               </h3>
               <p class="text-[#D34010] italic text-lg mb-6 font-medium">

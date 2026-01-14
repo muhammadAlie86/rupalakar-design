@@ -1,181 +1,110 @@
 <template>
-  <section class="min-h-screen bg-[#F9EBEA] flex flex-col items-center py-12 px-4 font-raleway overflow-x-hidden">
-    
-    <div class="mx-auto max-w-6xl px-6 pt-16"> 
-      <div class="mt-8 mb-16 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-        <div class="text-left" data-aos="fade-right" data-aos-duration="1000"> 
-          <h1 class="text-5xl md:text-7xl font-black leading-[1.1] text-[#D34010]">
-            Brand Bagus <br />Gak Lahir <br />Dari Asumsi
-          </h1>
-          <p class="mt-6 text-lg md:text-xl text-gray-900 leading-relaxed max-w-md font-medium">
-            Brand yang kuat lahir dari keputusan sadar. Bukan karena tren, bukan karena ikut-ikutan.
-          </p>
-        </div>
-
-        <div class="relative flex justify-center items-center" data-aos="zoom-in-left" data-aos-duration="1200">
-          <div class="absolute inset-0 translate-x-4 translate-y-4 -z-10 bg-[#D34010]/5 rounded-full blur-3xl"></div>
-          <img 
-            src="/konsul_satu.png" 
-            class="w-full h-auto object-contain relative z-10 floating-animation" 
-            alt="Visual Branding Rupalakar" 
-          />
-        </div>
-      </div>
+  <section class="min-h-screen bg-[#F9EBEA] py-8 md:py-20 px-4 font-raleway overflow-x-hidden">
+    <div class="max-w-6xl mx-auto">
       
-      <div class="mb-12 text-center" data-aos="fade-up">
-        <h2 class="text-2xl md:text-4xl text-[#D34010] leading-tight max-w-4xl mx-auto font-medium">
-          Ini 
-          <span class="text-4xl md:text-6xl font-semibold tracking-tighter text-[#D34010] block md:inline my-2">
-            Masalah 
-          </span>
-          yang kamu hadapi?
-        </h2>
-      </div>
-
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        <div class="lg:col-span-5 relative flex justify-center" data-aos="fade-right">
-          <div class="absolute -left-4 top-0 text-[#D34010] opacity-10 font-black text-[280px] leading-none -z-10 select-none">
-            R
-          </div>
-          <img 
-            src="/konsul_dua.png" 
-            alt="Problem Context" 
-            class="w-full max-w-[400px] object-contain drop-shadow-2xl"
-          />
-        </div>
-
-        <div class="lg:col-span-7 space-y-6">
-          <div 
-            v-for="(item, index) in problems" 
-            :key="index"
-            data-aos="fade-left"
-            :data-aos-delay="index * 200"
-            class="relative group border-2 border-[#D34010] bg-[#F9EBEA] p-6 md:p-8 transition-all duration-500 hover:shadow-xl hover:-translate-y-1"
-          >
-            <p class="text-xl md:text-2xl text-gray-900 leading-snug font-medium">
-              {{ item.text }}
-              <span class="text-[#D34010] font-black group-hover:text-black transition-colors">{{ item.highlight }}</span>
-              {{ item.suffix }}
-            </p>
-            <div class="absolute -bottom-2 -right-2 w-full h-full border-2 border-[#D34010]/10 -z-10 group-hover:border-[#D34010]/40 transition-colors"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="mt-24 mb-12 text-center" data-aos="zoom-in">
-        <h2 class="text-2xl md:text-4xl text-[#D34010] leading-tight max-w-4xl mx-auto font-medium">
-          Solusi Kami
-        </h2>
-      </div>
-      <div class="mt-8 mb-12 text-left" data-aos="fade-up">
-        <h2 class="text-3xl md:text-5xl text-[#D34010] leading-tight max-w-4xl font-black">
-          Branding Solid Dimulai dari Sesi Konsultasi yang Tepat.
-        </h2>
-      </div>
-
-      <div class="mt-8 mb-16 grid grid-cols-1 lg:grid-cols-2 gap-10">
-        <div class="text-left" data-aos="fade-right"> 
-          <p class="text-xl md:text-3xl text-gray-900 leading-relaxed max-w-md font-medium">
-            Di Rupalakar, kami percaya <br/>
-            bahwa branding yang kuat <br/>
-            lahir dari pemahaman yang <br/>
-            mendalam tentang siapa<br/>
-            brand kamu. Kami bantu <br/>
-            kamu menggali nilai-nilai,<br/>
-            visi, dan audiens yang akan <br/>
-            membawa brand kamu <br/>
-            lebih jauh diingat dan dikenal.
-          </p>
-        </div>
-
-        <div class="relative flex justify-center items-center min-h-[400px]">
-  <img 
-    src="/konsul_tiga.png" 
-    class="w-full h-auto object-contain relative z-20 opacity-100 visible floating-animation" 
-    alt="Visual Branding Rupalakar" 
-    @load="() => console.log('Gambar Berhasil Dimuat')"
-    @error="(e) => console.error('Gambar Gagal Dimuat', e)"
-  />
+      <header class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center mb-24 mt-10 px-2">
   
-  <div class="absolute inset-0 bg-[#D34010]/5 rounded-full blur-3xl -z-10"></div>
-</div>
+      <div class="order-1 lg:order-1 text-left" data-aos="fade-right">
+        <h1 class="text-4xl sm:text-5xl md:text-7xl font-black leading-tight text-[#D34010] mb-6">
+          Brand Bagus <br class="hidden sm:block" /> Gak Lahir <br class="hidden sm:block" /> Dari Asumsi
+        </h1>
+        <p class="text-base md:text-xl text-gray-800 font-normal max-w-lg leading-relaxed">
+          Brand yang kuat lahir dari keputusan sadar. Bukan karena tren, bukan karena ikut-ikutan.
+        </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
-        <ConsulCardSection
-          data-aos="fade-up" data-aos-delay="0"
-          title="Assessment"
-          schedule="H-1"
-          description="Interview dan sesi tanya jawab seputar masalah dan goal yang ingin dicapai."
-        />
-        <ConsulCardSection
-          data-aos="fade-up" data-aos-delay="200"
-          title="Presentasi Solusi & Diskusi"
-          schedule="H-2"
-          description="Presentasi solusi dan diskusi terbuka seputar branding dan bisnis."
-        />
-        <ConsulCardSection
-          data-aos="fade-up" data-aos-delay="400"
-          title="Digital Book insight dan Studi Kasus"
-          schedule="H+14"
-          description="Pemberian Panduan, Insight serta studi kasus mendalam yang relevan dengan masalah yang dihadapi"
+      <div class="order-2 lg:order-2 relative flex justify-center" data-aos="zoom-in">
+        <div class="absolute inset-0 bg-[#D34010]/5 rounded-full blur-3xl -z-10 scale-125 md:scale-150"></div>
+        
+        <img 
+          src="/konsul_satu.png" 
+          class="w-3/4 sm:w-full max-w-[280px] md:max-w-md h-auto object-contain floating-animation" 
+          alt="Hero Branding" 
         />
       </div>
 
-      <div class="mb-12 text-center" data-aos="zoom-in">
-        <h2 class="text-2xl md:text-4xl text-[#D34010] leading-tight max-w-4xl mx-auto font-medium">
-          Apa
-          <span class="text-4xl md:text-6xl font-semibold tracking-tighter text-[#D34010] block md:inline my-2">
-            Kata Mereka ?
-          </span>
-        </h2>
-      </div>
-      <ConsulTestimoniSection data-aos="fade-up" />
+    </header>
 
-      <div class="my-24 text-center" data-aos="flip-up">
-        <h2 class="text-2xl md:text-4xl text-[#D34010] leading-tight max-w-4xl mx-auto font-medium">
-          Buat Branding yang Solid Dimulai dari Konsultasi yang Tepat.
-          <br/>
-          <span class="text-3xl md:text-4xl font-semibold tracking-tighter text-black underline-animate block md:inline my-2 cursor-pointer">
-              Jadwalkan Sekarang.
+      <section class="mb-32">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-xl md:text-3xl text-[#D34010] font-medium mb-2">Ini <span class="text-4xl md:text-6xl font-bold block sm:inline">Masalah</span></h2>
+          <p class="text-lg md:text-xl text-gray-700">yang mungkin kamu hadapi saat ini?</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          <div class="hidden lg:block lg:col-span-5 relative">
+            <span class="absolute -top-20 -left-10 text-[#D34010]/10 font-black text-[300px] select-none">R</span>
+            <img src="/konsul_dua.png" class="relative z-10 w-full drop-shadow-2xl" alt="Problem Illustration" />
+          </div>
+          
+          <div class="lg:col-span-7 space-y-4">
+            <div v-for="(item, i) in problems" :key="i" 
+                 class="problem-card" 
+                 data-aos="fade-left" :data-aos-delay="i * 150">
+              <p class="text-lg md:text-2xl font-medium text-black leading-snug">
+                {{ item.text }} <span class="text-[#D34010] font-black underline decoration-2">{{ item.highlight }}</span> {{ item.suffix }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-32">
+        <div class="flex flex-col md:flex-row gap-10 items-center mb-16">
+          <div class="flex-1" data-aos="fade-right">
+            <h2 class="text-3xl md:text-5xl font-black text-[#D34010] leading-tight">
+              Branding Solid Dimulai dari Sesi Konsultasi yang Tepat.
+            </h2>
+            <p class="mt-6 text-lg md:text-2xl text- leading-relaxed font-medium">
+              Kami bantu kamu menggali nilai-nilai, visi, dan audiens yang akan membawa brand kamu lebih jauh.
+            </p>
+          </div>
+          <div class="flex-1 flex justify-center" data-aos="zoom-in">
+            <img src="/konsul_tiga.png" class="w-3/4 md:w-full max-w-sm floating-animation" alt="Solution" />
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <ConsulCardSection v-for="(card, i) in roadmap" :key="i" v-bind="card" data-aos="fade-up" :data-aos-delay="i * 100" />
+        </div>
+      </section>
+
+      <section class="mb-32">
+        <div class="text-center mb-10" data-aos="fade-up">
+          <h2 class="text-3xl md:text-5xl font-bold text-black">Portofolio <span class="text-[#D34010]">Rupalakar</span></h2>
+        </div>
+        <div class="relative h-[250px] sm:h-[400px] md:h-[550px] rounded-3xl overflow-hidden shadow-2xl group" data-aos="zoom-out">
+          <video ref="videoPlayer" autoplay loop playsinline :muted="isMuted" class="w-full h-full object-cover">
+            <source src="/ic_intro.mp4" type="video/mp4" />
+          </video>
+          <button @click="toggleSound" class="absolute bottom-6 right-6 bg-black/60 backdrop-blur-md text-white px-5 py-3 rounded-full hover:bg-[#D34010] transition-all text-sm font-bold">
+            {{ isMuted ? '🔇 Unmute' : '🔊 Mute' }}
+          </button>
+        </div>
+      </section>
+
+      <div class="text-center py-20 border-t border-[#D34010]/20" data-aos="flip-up">
+        <h3 class="text-2xl md:text-4xl font-medium text-[#D34010]">
+          Siap Membangun Brand yang Solid? <br/>
+          <span class="text-3xl md:text-5xl font-black text-black block mt-4 cursor-pointer hover:text-[#D34010] transition-colors duration-300">
+            Jadwalkan Sekarang.
           </span>
-        </h2>
+        </h3>
       </div>
 
-      <div class="mb-12 text-center" data-aos="fade-up">
-        <h2 class="text-2xl md:text-4xl text-[#D34010] leading-tight max-w-4xl mx-auto font-medium">
-          Portopolio
-          <span class="text-3xl md:text-4xl font-black tracking-tighter block md:inline my-2 text-black">
-              Rupalakar
-          </span>
-          <br/>
-          <span class="text-xl md:text-2xl text-gray-600 font-light block md:inline my-2">
-              Lihat bagaimana Kami Membantu Brand Tumbuh
-          </span>
-        </h2>
-      </div>
-      
-      <div class="relative h-[500px] overflow-hidden rounded-3xl group shadow-2xl" data-aos="zoom-in">
-        <video 
-          ref="videoPlayer"
-          autoplay 
-          :muted="isMuted" 
-          loop 
-          playsinline 
-          class="absolute min-w-full min-h-full object-cover"
-        >
-          <source src="/ic_intro.mp4" type="video/mp4" />
-        </video>
+     <div class="mb-8 md:mb-12 text-center" data-aos="fade-up">
+      <h2 class="text-xl md:text-4xl text-[#D34010] leading-tight max-w-4xl mx-auto font-medium">
+        Portofolio 
+        <span class="text-3xl md:text-5xl font-black tracking-tighter block md:inline my-1 text-black">
+          Rupalakar
+        </span>
+        <br class="hidden md:block"/>
+        <span class="text-base md:text-2xl text-gray-600 font-light block mt-2">
+          Lihat bagaimana Kami Membantu Brand Tumbuh
+        </span>
+      </h2>
+    </div>
 
-        <button 
-          @click="toggleSound"
-          class="absolute bottom-6 right-6 z-20 bg-black/40 backdrop-blur-md p-4 px-6 rounded-full hover:bg-[#D34010] transition-all text-white font-bold flex items-center gap-2"
-        >
-          <transition name="scale" mode="out-in">
-            <span :key="isMuted">{{ isMuted ? '🔇 Aktifkan Suara' : '🔊 Matikan Suara' }}</span>
-          </transition>
-        </button>
-      </div>
     
       <ConsulMemberCard data-aos="fade-up" />
 

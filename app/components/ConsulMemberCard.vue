@@ -64,7 +64,7 @@ const teams = [
       {{ team.name }}
     </p>
 
-    <p class="text-gray-800 text-sm ">
+    <p class="text-black text-sm ">
       {{ team.description }}
     </p>
   </div>

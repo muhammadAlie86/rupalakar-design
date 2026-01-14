@@ -8,7 +8,7 @@
         {{ schedule }}
       </p>
     </div>
-    <p class="text-gray-900 text-lg md:text-xl leading-relaxed font-medium">
+    <p class="text-black text-lg md:text-xl leading-relaxed font-normal">
       {{ description }}
     </p>
   </div>

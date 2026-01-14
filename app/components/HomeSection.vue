@@ -3,52 +3,23 @@
 
     <div class="mx-auto max-w-6xl px-6 pt-16"> 
       <HomeCarouselSection :slides="heroSlides" />
-      <div class="mt-12 mb-16 px-12"> 
-        <div class="relative group">
-          <UCarousel
-            :items="logos"
-            :ui="{ 
-              wrapper: 'w-full', 
-              container: 'gap-4',
-              item: 'basis-1/2 md:basis-1/4 lg:basis-1/5' 
-            }"
-            arrows
-          >
-            <template #default="{ item }">
-              <div class="logo-card h-20 w-full flex items-center justify-center rounded-xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow">
-                <span class="text-gray-600 font-medium">{{ item }}</span>
-              </div>
-            </template>
-
-            <template #prev="{ onClick, disabled }">
-              <button v-if="!disabled" @click="onClick" class="absolute -left-10 top-1/2 -translate-y-1/2 z-30 p-2 rounded-full bg-white shadow-md border border-gray-100">
-                <UIcon name="i-heroicons-chevron-left-20-solid" class="w-6 h-6 text-gray-900" />
-              </button>
-            </template>
-
-            <template #next="{ onClick, disabled }">
-              <button v-if="!disabled" @click="onClick" class="absolute -right-10 top-1/2 -translate-y-1/2 z-30 p-2 rounded-full bg-white shadow-md border border-gray-100">
-                <UIcon name="i-heroicons-chevron-right-20-solid" class="w-6 h-6 text-gray-900" />
-              </button>
-            </template>
-          </UCarousel>
-        </div>
-      </div>
+      <HomeLogoSection/>
 
       
       <div class="mt-8 mb-8 grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
   
-      <div class="text-left" data-aos="fade-up"> <h1 class="text-3xl md:text-5xl font-extrabold leading-tight text-gray-900 uppercase">
+      <div class="text-left" data-aos="fade-up"> <h1 class="text-3xl md:text-5xl font-extrabold leading-tight text-black uppercase">
           We think in Visual<br />
           We <span class="text-[#D34010]">Design for Impact</span>
         </h1>
         
-        <p class="mt-6 text-lg md:text-2xl text-gray-900 leading-relaxed max-w-2xl font-medium">
+        <p class="mt-6 text-lg md:text-2xl text-black leading-relaxed max-w-2xl font-normal">
           Rupalakar adalah studio pemikir visual.
           Kami membantu brand memahami dirinya sebelum berbicara ke dunia.
         </p>
 
         <UButton 
+        to="/contact"
           size="lg" 
           class="bg-[#D34010] hover:bg-[#b0350d] text-white mt-8 mb-8 md:mb-24 font-bold uppercase tracking-wider px-10 py-4 rounded-none transition-all active:scale-95"
         >
@@ -57,12 +28,13 @@
       </div>
 
       <div class="flex justify-center lg:justify-end" data-aos="fade-up" data-aos-delay="200">
-        <div class="relative flex h-64 w-64 md:h-80 md:w-80 items-center justify-center rounded-xl bg-gray-900 text-white shadow-2xl">
-          <span class="font-bold tracking-widest opacity-50 uppercase text-xs">GIF / VISUAL</span>
-          
-          <div class="absolute inset-0 border-2 border-[#D34010]/20 rounded-xl"></div>
-        </div>
+      <div class="relative flex h-64 w-64 md:h-80 md:w-80 items-center justify-center   overflow-hidden">
+        
+          <img src="/rupalakar.gif" alt="Deskripsi Visual" class="h-full w-full object-cover">
+        
+        <div class="absolute inset-0 pointer-events-none"></div>
       </div>
+    </div>
     </div>
     </div>
 
@@ -85,13 +57,12 @@
 import { onMounted } from 'vue'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import HomeLogoSection from './HomeLogoSection.vue'
 
 const heroSlides = [
-  'https://picsum.photos/1600/900?random=1',
-  'https://picsum.photos/1600/900?random=2',
-  'https://picsum.photos/1600/900?random=3'
+  "/ic_intro.mp4"
 ]
-const logos = ['Logo 1', 'Logo 2', 'Logo 3', 'Logo 4', 'Logo 5']
+
 
 onMounted(() => {
   AOS.init({

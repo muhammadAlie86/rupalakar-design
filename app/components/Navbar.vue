@@ -22,7 +22,7 @@
           v-for="item in navItems"
           :key="item.to"
           :to="item.to"
-          class="font-raleway text-sm font-bold uppercase transition-colors duration-300 hover:text-[#D34010]"
+          class="font-raleway text-sm font-semibold uppercase transition-colors duration-300 hover:text-[#D34010]"
         >
           {{ item.label }}
         </NuxtLink>
@@ -49,7 +49,7 @@
           v-for="item in navItems"
           :key="item.to"
           :to="item.to"
-          class="py-4 text-lg font-bold transition-colors duration-300 hover:text-[#D34010]"
+          class="py-4 text-lg font-semibold transition-colors duration-300 hover:text-[#D34010]"
           @click="isOpen = false"
         >
           {{ item.label }}
@@ -64,10 +64,9 @@
 const isOpen = ref(false)
 
 const navItems = [
-  { label: 'Home', to: '/' },
+  { label: 'Beranda', to: '/' },
   { label: 'Service', to: '/service' },
   { label: 'Portopolio', to: '/portopolio' },
-  { label: 'Contact', to: '/contact' },
-  { label: 'Konsultasi', to: '/consult' }
+  { label: 'Kontak', to: '/contact' }
 ]
 </script>

@@ -3,7 +3,7 @@
     <div class="mx-auto max-w-6xl px-6">
 
       
-      <HomeCarouselSection :slides="slides" />
+      <PortopolioCarouselSection :slides="slides" />
 
       <!-- TITLE + GRID -->
       <div class="relative">
