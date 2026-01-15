@@ -10,7 +10,7 @@
         </h1>
         
         
-        <p class="mt-8 text-lg md:text-2xl text-black leading-relaxed max-w-2xl font-normal">
+        <p class="mt-8 text-lg md:text-2xl text-black leading-relaxed max-w-2xl font-normal text-justify">
           Kami hadir bukan untuk "menghasilkan desain", 
           tapi untuk membantu brand memahami dirinya dan berbicara dengan cara yang lebih jernih.
         </p>

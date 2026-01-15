@@ -110,46 +110,42 @@
       </div>
   </section>
 </template>
-
 <script setup>
-import emailjs from '@emailjs/browser'
 import { ref } from 'vue'
 
-/* Props */
 const props = defineProps({
   title: { type: String, default: 'Hubungi Kami' },
-  submitText: { type: String, default: 'Submit' },
-  serviceId: { type: String, required: true },
-  templateId: { type: String, required: true },
-  publicKey: { type: String, required: true }
+  submitText: { type: String, default: 'Submit' }
 })
 
-/* Emits */
 const emit = defineEmits(['success', 'error'])
 
-/* State */
 const isSending = ref(false)
-const form = ref({
+const initialForm = {
   from_name: '',
   reply_to: '',
   company: '',
   job_title: '',
   message: ''
-})
+}
+const form = ref({ ...initialForm })
 
-/* Action */
 const sendEmail = async () => {
+  if (isSending.value) return
   isSending.value = true
+  
   try {
-    await emailjs.send(
-      props.serviceId,
-      props.templateId,
-      form.value,
-      props.publicKey
-    )
-    emit('success')
+    const response = await $fetch('/api/send-email', {
+      method: 'POST',
+      body: form.value
+    })
+
+    alert('Pesan berhasil dikirim')
+    emit('success', response)
     resetForm()
   } catch (err) {
+    console.error('SMTP Error:', err)
+    alert('Gagal mengirim pesan. Silahkan Coba lagi.')
     emit('error', err)
   } finally {
     isSending.value = false
@@ -157,6 +153,6 @@ const sendEmail = async () => {
 }
 
 const resetForm = () => {
-  Object.keys(form.value).forEach(k => (form.value[k] = ''))
+  form.value = { ...initialForm }
 }
 </script>
