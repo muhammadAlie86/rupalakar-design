@@ -3,6 +3,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
 /* Cara menghilangkan scrollbar abu-abu di kanan agar bersih seperti desain Anda */
 ::-webkit-scrollbar {
   display: none;

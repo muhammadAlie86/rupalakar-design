@@ -1,43 +1,76 @@
 <template>
-  <div class="mx-auto max-w-6xl px-6 py-6 md:py-20 font-raleway text-left overflow-hidden">
-    
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-20">
-
-      <div class="space-y-6 md:space-y-10">
-        <p class="text-lg md:text-2xl text-black leading-relaxed font-normal">
-          Di era AI, manusia masih punya tempat. Bukan menolak teknologi AI, tapi kami percaya, ada hal-hal yang tidak bisa dibuat mesin; intuisi, rasa, kritis dalam pemikiran, dan kejujuran berpikir.
-        </p>
-        
-        <p class="text-lg md:text-2xl text-black leading-relaxed font-normal">
-          Rupalakar adalah bukti bahwa kreativitas manusia akan terus pantas berdiri di dunia yang serba otomatis. Kami hadir untuk mengembalikan makna.
-        </p>
-
-        <div class="pt-8">
-          <h2 class="text-3xl md:text-5xl uppercase tracking-tighter font-normal">
-            <span class="text-[#D34010] font-black">HOW</span> WE DO
-          </h2>
+  <section class="w-full font-raleway text-left overflow-hidden bg-[#F9EBEA] pt-16 md:pt-24">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-0">
+      
+      <div class="px-6 md:pl-12 md:pr-16 pb-12">
+        <div class="space-y-8">
+          <p class="text-xl md:text-2xl text-black leading-relaxed font-normal text-justify hyphens-auto">
+        Di era AI, manusia masih punya 
+tempat. Bukan menolak teknologi 
+AI, tapi kami percaya, ada hal-hal 
+yang tidak bisa dibuat mesin; 
+intuisi, rasa, kritis dalam pemikiran, 
+dan kejujuran berpikir  </p>
           
-          <div class="flex justify-center py-8">
-            <img src="/ic_diag.png" alt="Diagram" class="w-full max-w-xs md:max-w-md object-contain" />
-          </div>
-
-          <p class="text-lg md:text-2xl text-black leading-relaxed font-normal">
-            Kami tidak memulai dari warna, bentuk, atau moodboard. Kami memulai dari kesadaran: siapa kamu, apa yang kamu rasakan, apa yang ingin kamu ubah. Dari sana, visual berkembang secara natural.
+          <p class="text-xl md:text-2xl text-black leading-relaxed font-normal text-justify hyphens-auto">
+            Rupalakar adalah bukti bahwa 
+kreativitas manusia akan terus 
+pantas berdiri di dunia yang serba 
+otomatis di tengah dunia kreatif 
+yang makin cepat dan penuh 
+automasi, Rupalakar hadir untuk 
+mengembalikan makna, bahwa 
+kami percaya manusia masih punya 
+tempat dalam merasakan dan 
+memaknai sesuatu.
           </p>
+
+          <div class="pt-8 ">
+            <h2 class="text-5xl md:text-7xl uppercase tracking-tighter font-medium mb-10 text-left">
+              <span class="text-[#D34010] font-black">HOW</span> WE DO
+            </h2>
+            <div class="relative mt-12 md:mt-0 flex h-[400px] md:h-full items-end justify-end overflow-visible pb-20">
+  <img 
+    src="/ic_diag.png" 
+    alt="Thinker" 
+    class="
+      w-full md:w-[120%] lg:w-[140%]
+      h-auto object-contain
+      transform scale-[1.2] md:scale-[1.35]
+      translate-x-[10%]
+      origin-bottom
+      
+    md:mr-[-15%] lg:mr-[-25%]
+    md:mt-[15%] lg:mt-[30%]
+    "
+  />
+</div>
+
+
+          
+          </div>
         </div>
       </div>
 
-      <div class="space-y-6 md:space-y-8">
-        <p class="text-lg md:text-2xl text-black leading-relaxed font-normal">
-          Bukan hanya menghasilkan identitas visual, tapi membantu brand menemukan kesadaran dan kritisasi berpikir dalam pembentukannya. Kami percaya manusia masih punya tempat dalam merasakan sesuatu.
-        </p>
-
-        <div class="relative group mt-4 px-4 lg:px-0">
-          <div class="absolute -inset-1 md:-inset-2  translate-x-2 translate-y-2 md:translate-x-4 md:translate-y-4 -z-10"></div>
-          <img src="/ic_home_picture.png" alt="Thinker" class="w-full rounded-sm  transition-all duration-500 max-w-md mx-auto" />
+      <div class="flex flex-col justify-between h-full bg-[#F9EBEA]">
+        <div class="px-6 md:pl-0 md:pr-12 md:pb-12">
+          <p class="text-xl md:text-2xl text-black leading-relaxed font-normal text-justify hyphens-auto">
+       Bukan hanya menghasilkan 
+identitas visual, tapi membantu 
+brand menemukan kesadaran 
+dan kritisasi berpikir dalam 
+pembentukannya.   </p>
         </div>
+
+       <div class="relative mt-12 md:mt-0 flex h-full items-end justify-end">
+  <img 
+    src="/ic_home_picture.png" 
+    alt="Thinker" 
+    class="w-[90%] md:w-[110%] lg:w-[80%] h-auto object-contain ml-auto self-end"
+  />
+</div>
       </div>
 
-    </div> 
-  </div> 
+    </div>
+  </section>
 </template>

@@ -15,16 +15,17 @@
         <div class="relative h-[450px] md:h-[650px] w-full overflow-hidden bg-black">
 
           <!-- VIDEO -->
-          <video
-            v-if="isVideo(slide)"
-            ref="videos"
-            :src="slide"
-            class="h-full w-full object-cover"
-            muted
-            loop
-            playsinline
-          ></video>
-
+        <video
+          v-if="isVideo(slide)"
+          ref="videos"
+          :src="slide"
+          class="h-full w-full object-cover"
+          :autoplay="false" 
+          :muted="true"
+          loop
+          playsinline
+          controls
+        ></video>
         
 
           <!-- Overlay -->

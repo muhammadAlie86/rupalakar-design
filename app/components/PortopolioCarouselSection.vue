@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full relative group mb-16">
+<div class="w-full relative group mb-16 px-4 md:px-0">
     <swiper-container
       ref="swiperRef"
       init="false"
@@ -43,7 +43,6 @@ onMounted(async () => {
   const swiperEl = swiperRef.value;
   if (!swiperEl) return;
 
-  // Konfigurasi Lengkap via Object Params
   const swiperParams = {
     autoplay: {
       delay: 3000,
@@ -53,7 +52,6 @@ onMounted(async () => {
       el: '.swiper-pagination-custom',
       clickable: true,
       renderBullet: (index: number, className: string) => {
-        // Gunakan CSS murni di sini karena @apply sering bermasalah di Nuxt 4
         return `<span class="${className}" style="width: 10px; height: 10px; background: rgba(255,255,255,0.5); border-radius: 50%; cursor: pointer; display: inline-block; transition: all 0.3s"></span>`;
       },
     },
@@ -68,7 +66,6 @@ onMounted(async () => {
 </script>
 
 <style scoped>
-/* Gunakan :deep untuk memodifikasi style bullet yang aktif */
 :deep(.swiper-pagination-bullet-active) {
   background-color: #D34010 !important; /* Gunakan warna brand orange kamu */
   transform: scale(1.4);

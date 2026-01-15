@@ -3,7 +3,7 @@
     <div class="max-w-6xl mx-auto flex flex-col">
       
       <div class="space-y-6 md:space-y-8 text-left w-full">
-        <h1 class="text-[36px] sm:text-[48px] md:text-[72px] lg:text-[84px] font-black leading-[1.1] tracking-tighter text-black w-full">
+        <h1 class="text-[24px] sm:text-[32px] md:text-[48px] lg:text-[72px] font-black leading-[1.1] tracking-tighter text-black w-full">
           Kami bukan vendor.<br />
           tapi
           <span class="text-[#D34010]"> Kami partner berpikir visualmu.</span>

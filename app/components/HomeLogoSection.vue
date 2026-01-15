@@ -49,7 +49,7 @@ const clients = [
         </SwiperSlide>
       </Swiper>
 
-      <button class="nav-prev absolute left-[-40px] md:left-[-80px] top-1/2 -translate-y-1/2 z-50 text-gray-300 hover:text-[#D34010] transition-all">
+      <!-- <button class="nav-prev absolute left-[-40px] md:left-[-80px] top-1/2 -translate-y-1/2 z-50 text-gray-300 hover:text-[#D34010] transition-all">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 md:h-12 md:w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
           <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
         </svg>
@@ -59,7 +59,7 @@ const clients = [
         <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 md:h-12 md:w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
           <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
         </svg>
-      </button>
+      </button> -->
 
     </div>
   </section>
