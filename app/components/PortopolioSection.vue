@@ -7,10 +7,10 @@
       </h1>
     </div>
 
-    <div class="relative z-500 mx-auto px-4 md:px-0">
+    <div class="relative z-500 mx-auto px-0 md:px-0">
       <PortopolioCarouselSection :slides="slides" />
       
-      <div class="mx-auto mt-12 md:mt-24">
+      <div class="mx-auto mt-12 px-4 md:mt-24">
         <PortopolioGridSection />
       </div>
     </div>

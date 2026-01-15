@@ -5,7 +5,7 @@
 
       <HomeCarouselSection :slides="heroSlides" />
     </div>
-    <div class="mx-auto max-w-6xl px-6 pt-16"> 
+    <div class="mx-auto max-w-6xl px-6 pt-2"> 
       <HomeLogoSection/>
 
       
@@ -74,10 +74,10 @@ const heroSlides = [
 
 onMounted(() => {
   AOS.init({
-    duration: 1000, // Kecepatan animasi (1 detik)
-    once: true,     // Set ke true jika ingin animasi hanya jalan 1x
-    mirror: true,    // Animasi akan jalan lagi jika kita scroll balik ke atas
-    offset: 120,     // Jarak (px) dari elemen asli untuk trigger animasi
+    duration: 1000, 
+    once: true,   
+    mirror: true,   
+    offset: 120,    
   })
 })
 </script>

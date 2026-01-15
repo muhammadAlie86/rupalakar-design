@@ -13,8 +13,11 @@
 </template>
 
 <script setup>
-// Pastikan variabel status menu didefinisikan jika Navbar mengandalkannya
-const isOpen = ref(false) 
+useHead({
+  meta: [
+    { name: 'color-scheme', content: 'light' }
+  ]
+})
 </script>
 
 <style>

@@ -12,7 +12,8 @@
         v-for="(slide, index) in slides"
         :key="index"
       >
-        <div class="relative h-[450px] md:h-[650px] w-full overflow-hidden bg-black">
+        <div class="
+      relative h-[250px] sm:h-[400px] md:h-[550px] overflow-hidden shadow-2xl group">
 
           <!-- VIDEO -->
         <video

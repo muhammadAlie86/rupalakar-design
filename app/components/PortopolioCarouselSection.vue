@@ -1,9 +1,8 @@
 <template>
-<div class="w-full relative group mb-16 px-4 md:px-0">
+<div class="w-full relative group mb-16 px-0 md:px-0">
     <swiper-container
       ref="swiperRef"
       init="false"
-      class="w-full overflow-hidden shadow-2xl"
       :slides-per-view="1"
       :loop="true"
     >

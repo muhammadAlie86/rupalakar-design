@@ -1,6 +1,6 @@
 <template>
-  <section class="flex items-center justify-center py-20 px-6">
-    <div class="w-full max-w-3xl">
+  <section class="flex items-center justify-center py-6 px-6 bg-[#F9EBEA]">
+    <div class="w-full ">
     <header class="mb-12 text-center">
         <h2 class="text-3xl font-extrabold text-gray-900 uppercase tracking-[0.2em]">
           {{ title }}

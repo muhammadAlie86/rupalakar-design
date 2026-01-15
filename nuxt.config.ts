@@ -1,4 +1,9 @@
 export default defineNuxtConfig({
+  ssr: false, 
+  
+  routeRules: {
+    '/**': { prerender: true }
+  },
  future: {
     compatibilityVersion: 4,
   },

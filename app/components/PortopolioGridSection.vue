@@ -1,12 +1,12 @@
 <template>
-  <section class="mx-auto max-w-6xl px-6> mb-6">
-    <div class="max-auto max-w-7xl">
+  <section class="mx-auto max-w-6xl px-6> mb-6 " >
+    <div class="max-auto max-w-7xl ">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         
         <div 
           v-for="(item, index) in portfolioItems" 
           :key="index"
-          class="bg-white border border-black flex flex-col group transition-all duration-300 hover:shadow-2xl"
+          class="bg-[#F9EBEA] selection:bg-[#D34010] border border-black flex flex-col group transition-all duration-300 hover:shadow-2xl"
         >
           <div class="relative aspect-square bg-black overflow-hidden">
             <img 
@@ -22,10 +22,11 @@
               <span class="text-[#D34010]"> {{ item.title }}</span>
             </h3>
             
-            <p class="text-black text-sm leading-relaxed mb-8 flex-grow">
+          <div class="p-6">
+            <p class="text-black text-sm leading-relaxed mb-8 flex-grow line-clamp-3">
               {{ item.description }}
             </p>
-
+          </div>
             <div class="flex items-center justify-between mt-auto">
               <UButton
                 to="/contact"

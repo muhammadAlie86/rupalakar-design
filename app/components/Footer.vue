@@ -84,6 +84,6 @@ const socialMedia = [
   { name: 'Instagram', icon: 'ic_ig.png', username: 'rupalakar.design', link: 'https://www.instagram.com/rupalakar.design/' },
   { name: 'Threads', icon: 'ic_threads.png', username: 'rupalakar.design', link: 'https://www.threads.com/@rupalakar.design?xmt=AQF05zxiC9gpHV0dD7o2qlrO_UF-ghfP2W6rpCfRczGoXNo' },
   { name: 'X', icon: 'ic_x.png', username: 'rupalakar', link: 'https://x.com/rupalakar' },
-  { name: 'Youtube', icon: 'ic_yt.png', username: 'rupalakar', link: 'https://www.youtube.com/@rupalakar1891' }
+  { name: 'Youtube', icon: 'ic_yt.png', username: 'rupalakar', link: 'https://www.youtube.com/@rupalakar' }
 ]
 </script>
