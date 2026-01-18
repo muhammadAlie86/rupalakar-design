@@ -4,14 +4,15 @@
     <div class="mx-auto">
 
       <HomeCarouselSection :slides="heroSlides" />
-    </div>
-    <div class="mx-auto max-w-6xl px-6 pt-2"> 
+      
       <HomeLogoSection/>
+    </div>
+    <div class="mx-auto max-w-6xl pt-2"> 
 
       
       <div class="mt-8 mb-8 grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
   
-      <div class="text-left" data-aos="fade-up"> <h1 class="text-3xl md:text-5xl font-extrabold leading-tight text-black">
+      <div class="text-left px-6" data-aos="fade-up"> <h1 class="text-3xl md:text-5xl font-extrabold leading-tight text-black">
           We think in Visual<br />
           We <span class="text-[#D34010]">Design for Impact</span>
         </h1>
@@ -30,8 +31,8 @@
         </UButton>
       </div>
 
-      <div class="flex justify-center lg:justify-end" data-aos="fade-up" data-aos-delay="200">
-      <div class="relative flex h-64 w-64 md:h-80 md:w-80 items-center justify-center   overflow-hidden">
+      <div class="flex justify-center lg:justify-end" data-aos="fade-up">
+      <div class="relative flex h-64 w-64 md:h-80 md:w-80 aspect-square items-center justify-center   overflow-hidden">
         
           <img src="/rupalakar.gif" alt="Deskripsi Visual" class="h-full w-full object-cover">
         
@@ -41,20 +42,20 @@
     </div>
     </div>
 
-    <div data-aos="fade-up" data-aos-delay="100">
+    <div data-aos="fade-up">
       <WhySection />
     </div>
 
-    <div data-aos="fade-up" data-aos-delay="200">
+    <div data-aos="fade-up" >
       <HomeWeDoSection />
     </div>
     
-    <div data-aos="fade-up" data-aos-delay="400" class="mx-auto max-w-6xl px-6 pt-16 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-0">
+    <div data-aos="fade-up"  class=" px-6 mx-auto max-w-6xl pt-16 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-0">
       <p class="text-xl md:text-2xl text-black leading-relaxed font-normal text-justify hyphens-auto">
           Kami tidak memulai dari warna, bentuk, atau moodboard. Kami memulai dari kesadaran: siapa kamu, apa yang kamu rasakan, apa yang ingin kamu ubah. Dari sana, visual berkembang secara natural.
       </p>
     </div>
-    <div data-aos="fade-up" data-aos-delay="400">
+    <div class=" px-6" >
       <HomeFooterSection />
     </div>
 
@@ -75,9 +76,32 @@ const heroSlides = [
 onMounted(() => {
   AOS.init({
     duration: 1000, 
-    once: true,   
-    mirror: true,   
-    offset: 120,    
+    once: true, 
+    offset: 100, 
+    mirror: false,
+    disableMutationObserver: false,anchorPlacement: 'top-bottom',
   })
 })
+window.addEventListener('load', () => {
+    AOS.refresh()
+  })
+
+  // 3. Tambahan untuk Chrome: Refresh jika ada perubahan DOM (seperti Swiper)
+  setTimeout(() => {
+    AOS.refresh()
+  }, 500)
 </script>
+<style>
+html, body {
+  /* Mencegah overscroll bounce yang mengganggu AOS */
+  overscroll-behavior-y: none; 
+  /* Memastikan scroll halus tapi tetap responsif */
+  scroll-behavior: smooth;
+}
+
+/* Memastikan elemen dengan skala besar tidak merusak area scroll */
+.will-change-transform {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+</style>

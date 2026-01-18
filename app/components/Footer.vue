@@ -4,7 +4,7 @@
       <UContainer class="grid grid-cols-1 md:grid-cols-3 gap-10">
         
         <div class="flex items-center">
-          <h2 class="text-3xl md:text-4xl font-black leading-tight uppercase tracking-tighter">
+          <h2 class="text-3xl md:text-4xl font-black leading-relaxed uppercase tracking-normal">
             A Next Level <br /> of Yours
           </h2>
         </div>
@@ -81,9 +81,8 @@ const contactList = [
 // Data Social Media
 const socialMedia = [
   { name: 'Facebook', icon: 'ic_fb.png', username: 'rupalakar', link: 'https://facebook.com/rupalakar' },
-  { name: 'Instagram', icon: 'ic_ig.png', username: 'rupalakar.design', link: 'https://www.instagram.com/rupalakar.design/' },
-  { name: 'Threads', icon: 'ic_threads.png', username: 'rupalakar.design', link: 'https://www.threads.com/@rupalakar.design?xmt=AQF05zxiC9gpHV0dD7o2qlrO_UF-ghfP2W6rpCfRczGoXNo' },
-  { name: 'X', icon: 'ic_x.png', username: 'rupalakar', link: 'https://x.com/rupalakar' },
+  { name: 'Instagram', icon: 'ic_ig.png', username: 'rupalakar', link: 'https://www.instagram.com/rupalakar.design/' },
+  { name: 'Threads', icon: 'ic_threads.png', username: 'rupalakar', link: 'https://www.threads.com/@rupalakar.design?xmt=AQF05zxiC9gpHV0dD7o2qlrO_UF-ghfP2W6rpCfRczGoXNo' },
   { name: 'Youtube', icon: 'ic_yt.png', username: 'rupalakar', link: 'https://www.youtube.com/@rupalakar' }
 ]
 </script>

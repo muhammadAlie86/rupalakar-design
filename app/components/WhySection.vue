@@ -1,17 +1,42 @@
 <template>
-  <div class="w-full overflow-hidden">
-    <header class="relative pt-12 md:pt-20 pb-4 md:pb-16 flex flex-col items-start">
-      <h1 class="flex justify-between px-4 md:px-[2vw] w-full text-[clamp(4rem,30vw,25rem)] font-[900] leading-[0.75] tracking-[-0.05em] text-[#D34010] uppercase select-none">
-  <span class="inline-block transform scale-x-110 origin-left">W</span>
-  <span class="inline-block">H</span>
-  <span class="inline-block transform scale-x-110 origin-right">Y</span>
-</h1>
+  <section class="w-full overflow-hidden bg-brand-cream">
+    <header class="relative pb-0 md:pb-24 flex flex-col">
 
-      <div class="w-full px-6 md:px-12 pt-4 md:pt-10 flex flex-col items-center">
-        <h2 class="text-[20px] md:text-[56px] tracking-[0.1em] md:tracking-[0.5em] font-bold leading-none text-black uppercase whitespace-nowrap text-center">
+      <!-- WHY Text -->
+      <h1
+        class="
+          w-full overflow-hidden uppercase font-black text-[#D34010] select-none
+          leading-[0.7]
+          text-[clamp(3.5rem,38vw,15rem)]
+          md:text-[clamp(6rem,35vw,25rem)]
+        "
+      >
+        <span
+          class="
+            flex whitespace-nowrap origin-left
+            scale-x-[1.05] md:scale-x-[1.29]
+            pl-1
+            
+          "
+        >
+          WHY
+        </span>
+      </h1>
+
+      <!-- Subtitle -->
+      <div class="pt-6 md:pt-12 w-full">
+        <h2
+          class="
+            w-full text-center uppercase font-bold text-black
+            text-[20px] md:text-[56px]
+            tracking-[0.2em] md:tracking-[0.4em]
+            leading-none
+          "
+        >
           Rupalakar Exists
         </h2>
       </div>
+
     </header>
-  </div>
+  </section>
 </template>

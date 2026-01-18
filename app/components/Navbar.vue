@@ -8,16 +8,17 @@
 
 
       <!-- LOGO -->
-      <div class="w-[150px] h-12 flex-shrink-0">
-      <img 
-        src="/assets/images/ic_logo.png" 
-        alt="R" 
-        class="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110" 
-      />
-    </div>
+      <NuxtLink to="/" class="w-[150px] h-12 flex-shrink-0 block group">
+        <img 
+          src="/assets/images/ic_logo.png" 
+          alt="R" 
+          class="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110" 
+        />
+      </NuxtLink>
+    
 
       <!-- DESKTOP NAV -->
-      <nav class="hidden md:flex items-center gap-10">
+      <nav class="hidden md:flex items-center gap-10 ">
         <NuxtLink
           v-for="item in navItems"
           :key="item.to"
@@ -29,11 +30,10 @@
       </nav>
 
       <!-- MOBILE BUTTON -->
-      <UButton
+    <UButton
   :icon="isOpen ? 'i-heroicons-x-mark-20-solid' : 'i-heroicons-bars-3-20-solid'"
   variant="ghost"
-  color="gray"
-  class="md:hidden z-[60]" 
+  class="md:hidden z-[60] text-black hover:text-[#D34010] p-2" 
   aria-label="Toggle Menu"
   @click="isOpen = !isOpen"
 />
@@ -44,7 +44,7 @@
   <USlideover v-if="isOpen" v-model="isOpen" class="md:hidden">
     <UCard class="flex flex-col flex-1 bg-[#F9EBEA]'">
 
-      <nav class="flex flex-col py-6">
+      <nav class="flex flex-col px-6">
         <NuxtLink
           v-for="item in navItems"
           :key="item.to"
@@ -66,7 +66,7 @@ const isOpen = ref(false)
 const navItems = [
   { label: 'Beranda', to: '/' },
   { label: 'Service', to: '/service' },
-  { label: 'Portopolio', to: '/portopolio' },
+  { label: 'Portofolio', to: '/portofolio' },
   { label: 'Kontak', to: '/contact' }
 ]
 </script>

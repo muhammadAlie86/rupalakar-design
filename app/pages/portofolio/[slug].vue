@@ -9,21 +9,21 @@
     </section>
 
     <div class="container mx-auto px-2 py-6 md:py-10 text-left">
-      <h1 class="text-4xl md:text-6xl font-medium tracking-tighter text-[#D34010] mb-6">
+      <h1 class="text-4xl md:text-6xl font-medium tracking-normal text-[#D34010] mb-6">
         {{ portfolioItem.title }}
       </h1>
       
-      <div class="text-2xl md:text-3xl font-normal tracking-tighter text-[#D34010] mb-6">
+      <div class="text-2xl md:text-3xl font-normal tracking-normal text-[#D34010] mb-6">
         <p class="text-lg md:text-xl text-black leading-relaxed font-normal">
           "{{ portfolioItem.description }}"
         </p>
       </div>
 
       <NuxtLink 
-        to="/portopolio" 
+        to="/portofolio" 
         class="inline-flex items-center mt-12 px-8 py-3 border border-[#D34010] text-[#D34010] uppercase font-normal tracking-widest hover:bg-[#D34010] hover:text-black transition-all duration-300 active:scale-95"
       >
-        <span class="mr-2">&larr;</span> Back to Portpolio
+        <span class="mr-2">&larr;</span> Back to Portfolio
       </NuxtLink>
     </div>
   </main>
@@ -31,8 +31,8 @@
   <div v-else class="h-screen flex items-center justify-center bg-[#0F172A] text-center px-6">
     <div>
       <h1 class="text-3xl font-bold text-red-500 mb-6 uppercase tracking-tighter italic">Portfolio item not found.</h1>
-      <NuxtLink to="/portopolio" class="text-white underline decoration-[#D34010] underline-offset-8 font-bold">
-        Back to portopolio
+      <NuxtLink to="/portofolio" class="text-white underline decoration-[#D34010] underline-offset-8 font-bold">
+        Back to portofolio
       </NuxtLink>
     </div>
   </div>

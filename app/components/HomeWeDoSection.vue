@@ -29,23 +29,24 @@ memaknai sesuatu.
             <h2 class="text-5xl md:text-7xl uppercase tracking-tighter font-medium mb-10 text-left" data-aos="fade-up">
               <span class="text-[#D34010] font-black">HOW</span> WE DO
             </h2>
-            <div class="relative mt-8 md:mt-0 flex h-auto md:h-full items-end justify-end overflow-visible pb-10 md:pb-20" data-aos="fade-up">
+            <div class="relative mt-8 md:mt-0 flex h-auto md:h-full items-end justify-end overflow-visible pb-10 md:pb-20 z-0" data-aos="fade-up">
   <img 
     src="/ic_diag.png" 
     alt="Thinker" 
     class="
       w-full h-auto object-contain
-      transform scale-100    
-      translate-x-0            
-      mt-4                    
+      /* Tambahkan ini untuk stabilitas Safari */
+      relative will-change-transform
       
+      transform scale-100 
       md:w-[100%] lg:w-[140%]
       md:scale-[1.35]
       md:translate-x-[10%]
       md:origin-bottom
-      md:mr-[10%] lg:mr-[-25%]
-      md:mt-[10%] lg:mt-[30%]
-      md:mb-0
+      
+      /* Gunakan margin yang lebih tegas untuk mendorong layout */
+      md:mt-[15%] lg:mt-[35%] 
+      md:mr-[5%] lg:mr-[-15%]
     "
   />
 </div>
@@ -93,3 +94,18 @@ onMounted(() => {
   })
 })
 </script>
+
+<style>
+html, body {
+  /* Mencegah overscroll bounce yang mengganggu AOS */
+  overscroll-behavior-y: none; 
+  /* Memastikan scroll halus tapi tetap responsif */
+  scroll-behavior: smooth;
+}
+
+/* Memastikan elemen dengan skala besar tidak merusak area scroll */
+.will-change-transform {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+</style>

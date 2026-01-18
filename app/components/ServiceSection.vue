@@ -48,7 +48,8 @@
                 : 'grid-rows-[0fr] opacity-0 pointer-events-none'
             ]"
           >
-            <div class="min-h-0"> <div 
+            <div class="min-h-0"> 
+              <div 
                 class="max-w-4xl transition-transform duration-500" 
                 :class="activeService === index ? 'translate-x-4' : ''"
               >
@@ -56,26 +57,28 @@
                   {{ item.description }}
                 </p>
 
-                <footer class="mt-12 flex flex-wrap items-center gap-8">
-                  <UButton 
-                    to="/contact"
-                    size="xl" 
-                    class="bg-[#D34010] hover:bg-[#b0350d] text-white px-10 py-4 font-medium text-lg rounded-none transition-all active:scale-95"
-                  >
-                    Mulai Percakapan
-                  </UButton>
-                  
-                  <ULink
-                    :to="`/service/${item.slug}`"
-                    class="text-xl font-medium text-black uppercase tracking-widest underline decoration-2 underline-offset-8 hover:text-[#D34010] transition-colors"
-                  >
-                    Explore More
-                  </ULink>
-                </footer>
+            
               </div>
             </div>
           </div>
+          
         </div>
+      </div>
+      <div class="mt-20 flex flex-wrap items-center gap-8" data-aos="fade-up">
+        <UButton 
+          to="/contact"
+          size="xl" 
+          class="bg-[#D34010] hover:bg-[#b0350d] text-white px-10 py-4 font-medium text-lg rounded-none transition-all active:scale-95"
+        >
+          Mulai Percakapan
+        </UButton>
+        
+        <ULink
+          to="/service/konsultasi"
+          class="text-xl font-medium text-black uppercase tracking-widest underline decoration-2 underline-offset-8 hover:text-[#D34010] transition-colors"
+        >
+          Explore More
+        </ULink>
       </div>
 
     </div>

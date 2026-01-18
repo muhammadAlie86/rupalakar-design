@@ -37,7 +37,7 @@
               </UButton>
 
               <ULink
-                :to="`/portopolio/${item.slug}`"
+                :to="`/portofolio/${item.slug}`"
                 class="text-[#D34010] font-medium text-sm uppercase underline decoration-2 underline-offset-4 hover:text-black transition-colors"
               >
                 Read More

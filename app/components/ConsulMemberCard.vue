@@ -28,7 +28,7 @@ const teams = [
 <template>
   <section class="bg-[#F9EFEA] py-24">
     <div class="mb-12 text-center">
-        <h2 class="text-2xl md:text-4xl text-[#D34010] leading-tight max-w-4xl mx-auto font-medium">
+            <h2 class="text-3xl md:text-5xl font-black text-[#D34010] leading-tight">
           Di Belakang Layar
         </h2>
       </div>

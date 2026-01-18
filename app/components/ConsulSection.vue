@@ -34,7 +34,7 @@
 
       <section class="mb-32">
         <div class="text-center mb-16" data-aos="fade-up">
-          <h2 class="text-xl md:text-3xl text-[#D34010] font-medium mb-2">Ini <span class="text-4xl md:text-6xl font-bold block sm:inline">Masalah</span> yang kamu hadapi?</h2>
+          <h2 class="text-3xl md:text-4xl text-[#D34010] font-black mb-2">Ini Masalah yang kamu hadapi?</h2>
          
         </div>
 
@@ -71,12 +71,12 @@
         </div>
       </section>
         <div class="text-center mb-16" data-aos="fade-up">
-          <h2 class="text-3xl md:text-4xl text-[#D34010] font-medium mb-2">Solusi Kami</h2>
+          <h2 class="text-3xl md:text-4xl text-[#D34010] font-black mb-2">Solusi Kami</h2>
         </div>
       <section class="mb-0">
         <div class="flex flex-col md:flex-row gap-10 items-center mb-16">
           <div class="flex-1" data-aos="fade-up">
-            <h2 class="text-3xl md:text-5xl font-medium text-[#D34010] leading-tight">
+            <h2 class="text-3xl md:text-5xl font-black text-[#D34010] leading-tight">
               Branding Solid Dimulai dari Sesi Konsultasi yang Tepat.
             </h2>
             <p class="mt-6 text-lg md:text-2xl text-black leading-relaxed font-medium">
@@ -126,7 +126,7 @@
         </div>
       </section>
       <div class="text-center mb-16 mt-6" data-aos="fade-up">
-          <h2 class="text-xl md:text-4xl text-[#D34010] font-medium mb-2">Apa Kata Mereka?</h2>
+          <h2 class="text-3xl md:text-5xl font-black text-[#D34010] leading-tight">Apa Kata Mereka?</h2>
       </div>
 
         <ConsulTestimoniSection data-aos="fade-up"/>
@@ -240,7 +240,8 @@ onMounted(() => {
   AOS.init({
     duration: 1000, 
     once: true,    
-    offset: 100,    
+    offset: 100,   
+    mirror:false 
   })
 })
 </script>
