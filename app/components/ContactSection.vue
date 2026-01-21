@@ -2,7 +2,7 @@
   <section class="flex items-center justify-center py-6 px-6 bg-[#F9EBEA]">
     <div class="w-full ">
     <header class="mb-12 text-center">
-        <h2 class="text-3xl font-extrabold text-gray-900 uppercase tracking-[0.2em]">
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-900 uppercase tracking-[0.2em]">
           {{ title }}
         </h2>
         <div class="mt-2 h-1 w-full bg-[#D34010] mx-auto"></div>
@@ -10,10 +10,8 @@
 
     
 
-      <!-- Form -->
       <form @submit.prevent="sendEmail" class="grid grid-cols-1 gap-y-8">
 
-        <!-- Nama -->
         <div>
           <label class="block text-sm font-bold text-gray-700 mb-2.5 mx-2.5">
             Nama Lengkap <span class="text-red-500">*</span>

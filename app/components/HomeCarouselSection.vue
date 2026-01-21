@@ -8,20 +8,18 @@
       init="false"
     >
       <swiper-slide v-for="(slide, index) in slides" :key="index">
-        <div class="relative h-[250px] sm:h-[400px] md:h-[550px] overflow-hidden bg-black">
-          
-          <video
-            v-if="isVideo(slide)"
-            :src="slide"
-            class="h-full w-full object-cover"
-            autoplay
-            :muted="globalMuted"
-            loop
-            playsinline
-            preload="auto"
-          ></video>
-
-        </div>
+        <div class="relative w-full aspect-video max-w-[1920px]">
+      <video
+        v-if="isVideo(slide)"
+        :src="slide"
+        class="w-full h-full object-contain"
+        autoplay
+        :muted="globalMuted"
+        loop
+        playsinline
+        preload="auto"
+      ></video>
+    </div>
       </swiper-slide>
     </swiper-container>
 

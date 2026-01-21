@@ -1,6 +1,6 @@
 <template>
   <section class="mx-auto max-w-6xl px-6> mb-6 " >
-    <div class="max-auto max-w-7xl ">
+    <div class="mx-auto max-w-[90%] md:max-w-[85%] lg:max-w-[100%]">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         
         <div 

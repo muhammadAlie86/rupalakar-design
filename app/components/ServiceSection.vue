@@ -1,6 +1,6 @@
 <template>
   <section class="bg-[#F9EBEA] selection:bg-[#D34010] selection:text-white py-32 overflow-hidden">
-    <div class="mx-auto max-w-6xl px-6">
+    <div class="mx-auto max-w-[90%] md:max-w-[85%] lg:max-w-[80%]">
       
       <header class="mb-20 text-left flex flex-col items-start" data-aos="fade-up">
         <h1 class="text-5xl md:text-8xl uppercase tracking-tighter leading-[0.9] font-medium">
@@ -48,8 +48,7 @@
                 : 'grid-rows-[0fr] opacity-0 pointer-events-none'
             ]"
           >
-            <div class="min-h-0"> 
-              <div 
+            <div class="min-h-0"> <div 
                 class="max-w-4xl transition-transform duration-500" 
                 :class="activeService === index ? 'translate-x-4' : ''"
               >
@@ -57,28 +56,26 @@
                   {{ item.description }}
                 </p>
 
-            
+                <footer class="mt-12 flex pr-6 items-center justify-between gap-2 md:justify-start md:gap-8">
+                <UButton 
+                  :to="`/contact?ref=${item.slug}`"
+                  size="xl" 
+                  class="bg-[#D34010] hover:bg-[#b0350d] text-white px-6 md:px-10 py-3 md:py-4 font-medium text-sm md:text-lg rounded-none transition-all active:scale-95 whitespace-nowrap"
+                >
+                  Mulai Percakapan
+                </UButton>
+                
+                <ULink
+                  :to="`/service/${item.slug}`"
+                  class="text-sm md:text-xl font-medium text-black uppercase tracking-widest underline decoration-2 underline-offset-8 hover:text-[#D34010] transition-colors whitespace-nowrap"
+                >
+                  Explore More
+                </ULink>
+              </footer>
               </div>
             </div>
           </div>
-          
         </div>
-      </div>
-      <div class="mt-20 flex flex-wrap items-center gap-8" data-aos="fade-up">
-        <UButton 
-          to="/contact"
-          size="xl" 
-          class="bg-[#D34010] hover:bg-[#b0350d] text-white px-10 py-4 font-medium text-lg rounded-none transition-all active:scale-95"
-        >
-          Mulai Percakapan
-        </UButton>
-        
-        <ULink
-          to="/service/konsultasi"
-          class="text-xl font-medium text-black uppercase tracking-widest underline decoration-2 underline-offset-8 hover:text-[#D34010] transition-colors"
-        >
-          Explore More
-        </ULink>
       </div>
 
     </div>

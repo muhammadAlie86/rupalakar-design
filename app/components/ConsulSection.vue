@@ -1,17 +1,20 @@
 <template>
   <section class="min-h-screen bg-[#F9EBEA] py-8 md:py-20 px-4 font-raleway overflow-x-hidden">
-    <div class="max-w-6xl mx-auto">
+   <div class="mx-auto w-[90%] md:w-[80%] lg:w-[90%]">
       
       <header class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center mb-24 mt-10 px-2">
   
       <div class="order-1 lg:order-1 text-left" data-aos="fade-right">
-        <h1 class="text-4xl sm:text-5xl md:text-7xl font-black leading-tight text-[#D34010] mb-6">
-          Brand Bagus <br class="hidden sm:block" /> Gak Lahir <br class="hidden sm:block" /> Dari Asumsi
-        </h1>
-        <p class="text-base md:text-xl text-black font-normal max-w-lg leading-relaxed">
-          Brand yang kuat lahir dari keputusan sadar. Bukan karena tren, bukan karena ikut-ikutan.
-        </p>
-      </div>
+      <h1 class="text-[clamp(2.2rem,6vw,8rem)] md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-black leading-[1.1] text-[#D34010] mb-[1.5rem] 2xl:mb-[3rem]">
+        Brand Bagus <br class="hidden sm:block" /> 
+        Gak Lahir <br class="hidden sm:block" /> 
+        Dari Asumsi
+      </h1>
+
+      <p class="text-base md:text-xl lg:text-2xl 2xl:text-4xl text-black font-normal max-w-[90%] md:max-w-[30rem] 2xl:max-w-[50rem] leading-relaxed">
+        Brand yang kuat lahir dari keputusan sadar. Bukan karena tren, bukan karena ikut-ikutan.
+      </p>
+    </div>
 
       <div class="order-2 lg:order-2 relative flex justify-center" data-aos="zoom-in">
         <div class="absolute inset-0 bg-[#D34010]/5 rounded-full blur-3xl -z-10 scale-125 md:scale-150"></div>
@@ -34,7 +37,7 @@
 
       <section class="mb-32">
         <div class="text-center mb-16" data-aos="fade-up">
-          <h2 class="text-3xl md:text-4xl text-[#D34010] font-black mb-2">Ini Masalah yang kamu hadapi?</h2>
+          <h2 class="text-4xl lg:text-4xl xl:text-6xl text-[#D34010] font-black mb-2">Ini Masalah yang kamu hadapi?</h2>
          
         </div>
 
@@ -58,9 +61,9 @@
               class="problem-card border-2 border-[#D34010] p-6 md:p-8 transition-all duration-300 hover:bg-[#D34010]/5" 
               data-aos="fade-left">
             
-            <p class="text-lg md:text-2xl font-medium text-black leading-snug">
+            <p class="text-base md:text-xl lg:text-2xl 2xl:text-4xl font-medium text-black leading-snug">
               {{ item.text }} 
-              <span class="text-[#D34010] font-medium decoration-2">
+              <span class="text-[#D34010] text-base md:text-xl lg:text-2xl 2xl:text-4xl font-medium decoration-2">
                 {{ item.highlight }}
               </span> 
               {{ item.suffix }}
@@ -71,15 +74,15 @@
         </div>
       </section>
         <div class="text-center mb-16" data-aos="fade-up">
-          <h2 class="text-3xl md:text-4xl text-[#D34010] font-black mb-2">Solusi Kami</h2>
+          <h2 class="text-4xl lg:text-4xl xl:text-6xl text-[#D34010] font-black mb-2">Solusi Kami</h2>
         </div>
       <section class="mb-0">
         <div class="flex flex-col md:flex-row gap-10 items-center mb-16">
           <div class="flex-1" data-aos="fade-up">
-            <h2 class="text-3xl md:text-5xl font-black text-[#D34010] leading-tight">
+            <h2 class="text-[clamp(2.2rem,6vw,8rem)] md:text-5xl lg:text-6xl xl:text-7xl font-black text-[#D34010] leading-tight">
               Branding Solid Dimulai dari Sesi Konsultasi yang Tepat.
             </h2>
-            <p class="mt-6 text-lg md:text-2xl text-black leading-relaxed font-medium">
+            <p class="text-base md:text-xl lg:text-2xl 2xl:text-4xl pt-4 text-black leading-relaxed font-normal">
               Di Rupalakar, kami percaya
               bahwa branding yang kuat
               lahir dari pemahaman yang
@@ -107,7 +110,7 @@
        
       </section>
       <section class="bg-[#F9EBEA] py-0">
-        <div class="max-w-7xl mx-auto px-6">
+   <div class="mx-auto w-[90%] md:w-[80%] lg:w-[90%]">
           
           <div class="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-20">
             
@@ -126,18 +129,18 @@
         </div>
       </section>
       <div class="text-center mb-16 mt-6" data-aos="fade-up">
-          <h2 class="text-3xl md:text-5xl font-black text-[#D34010] leading-tight">Apa Kata Mereka?</h2>
+          <h2 class="text-4xl lg:text-4xl xl:text-6xl font-black text-[#D34010] leading-tight">Apa Kata Mereka?</h2>
       </div>
 
         <ConsulTestimoniSection data-aos="fade-up"/>
         <div class="text-center py-20 border-t border-[#D34010]/20" data-aos="fade-up">
-          <h3 class="text-2xl md:text-4xl font-medium text-[#D34010]">
+          <h3 class="text-2xl md:text-3xl xl:text-4xl font-medium text-[#D34010]">
             Buat Branding yang Solid di mulai dari Konsultasi yang Tepat.<br/>
           
           </h3>
           <NuxtLink 
           to="/contact" 
-          class="text-2xl md:text-4xl font-black text-black block mt-6 cursor-pointer hover:text-[#D34010] transition-all duration-300 ease-in-out hover:translate-x-2"
+          class="text-2xl md:text-3xl xl:text-4xl font-black text-black block mt-6 cursor-pointer hover:text-[#D34010] transition-all duration-300 ease-in-out hover:translate-x-2"
         >
           Jadwalkan Sekarang.
         </NuxtLink>
@@ -145,7 +148,7 @@
       
       <section class="mb-8">
         <div class="text-center mb-2" data-aos="fade-up">
-          <h2 class="text-3xl md:text-5xl font-bold text-black">Portofolio <span class="text-[#D34010]">Rupalakar</span></h2>
+          <h2 class="text-4xl lg:text-4xl xl:text-6xl font-bold text-black">Portofolio <span class="text-[#D34010]">Rupalakar</span></h2>
         </div>
          <div class="text-center mb-8" data-aos="fade-up">
           <h2 class="text-xl md:text-2xl font-nor,a; text-black">
@@ -181,11 +184,11 @@
       <ConsulMemberCard data-aos="fade-up" />
 
       <div class="mb-12 mt-4 text-center" data-aos="fade-up">
-        <h2 class="text-2xl md:text-4xl text-[#D34010] leading-tight max-w-4xl mx-auto font-bold">
+        <h2 class="text-2xl md:text-4xl xl:text-4xl text-[#D34010] leading-tight max-w-4xl mx-auto font-bold">
           Klien Kami Sudah Mempercayakan <br/>
           Branding Mereka ke Rupalakar.
         </h2>
-        <p class="text-xl text-black font-light max-w-3xl mx-auto mt-4">
+        <p class="text-xl md:text-2xl xl:text-2xl text-black font-light max-w-3xl mx-auto mt-4">
             Brand yang kuat dimulai dari kemitraan yang solid. Kami sudah bekerja sama dengan berbagai brand dari berbagai industri.
         </p>
       </div>

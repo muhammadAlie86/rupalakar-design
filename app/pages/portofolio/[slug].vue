@@ -9,11 +9,11 @@
     </section>
 
     <div class="container mx-auto px-2 py-6 md:py-10 text-left">
-      <h1 class="text-4xl md:text-6xl font-medium tracking-normal text-[#D34010] mb-6">
+      <h1 class="text-4xl md:text-6xl lg:text-8xl font-medium tracking-normal text-[#D34010] mb-6">
         {{ portfolioItem.title }}
       </h1>
       
-      <div class="text-2xl md:text-3xl font-normal tracking-normal text-[#D34010] mb-6">
+      <div class="text-2xl md:text-4xl lg:text-6xl font-normal tracking-normal text-[#D34010] mb-6">
         <p class="text-lg md:text-xl text-black leading-relaxed font-normal">
           "{{ portfolioItem.description }}"
         </p>

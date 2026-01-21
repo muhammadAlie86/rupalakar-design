@@ -1,36 +1,24 @@
 <template>
-  <section class="w-full overflow-hidden bg-brand-cream">
-    <header class="relative pb-0 md:pb-24 flex flex-col">
-
-      <!-- WHY Text -->
-      <h1
-        class="
-          w-full overflow-hidden uppercase font-black text-[#D34010] select-none
-          leading-[0.7]
-          text-[clamp(3.5rem,38vw,15rem)]
-          md:text-[clamp(6rem,35vw,25rem)]
-        "
+  <section class="w-full overflow-hidden bg-brand-cream text-black">
+    <header class="relative flex flex-col">
+      
+      <div class="relative w-full"> 
+      <img 
+        src="/ic_why.png" 
+        alt="Rupalakar Visual" 
+        class="w-full h-auto object-contain transition-opacity duration-700"
+        loading="eager"
       >
-        <span
-          class="
-            flex whitespace-nowrap origin-left
-            scale-x-[1.05] md:scale-x-[1.29]
-            pl-1
-            
-          "
-        >
-          WHY
-        </span>
-      </h1>
+    </div>
 
-      <!-- Subtitle -->
-      <div class="pt-6 md:pt-12 w-full">
+      <div class="container mx-auto px-4 py-8 md:py-16">
         <h2
           class="
-            w-full text-center uppercase font-bold text-black
-            text-[20px] md:text-[56px]
-            tracking-[0.2em] md:tracking-[0.4em]
-            leading-none
+            w-full text-center uppercase font-bold
+            text-xl tracking-[0.2em] leading-snug
+            md:text-4xl md:tracking-[0.3em]
+            lg:text-5xl lg:tracking-[0.4em]
+            xl:text-6xl
           "
         >
           Rupalakar Exists
