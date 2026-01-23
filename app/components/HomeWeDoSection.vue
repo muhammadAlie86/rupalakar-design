@@ -53,7 +53,7 @@
             data-aos="fade-up"
           >
             <img 
-              src="/ic_home_picture.png" 
+              src="/ic_home_picture.webp" 
               alt="Thinker" 
               class="
                 w-[90%] md:w-full h-auto object-contain 

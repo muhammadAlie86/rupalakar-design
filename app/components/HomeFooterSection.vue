@@ -24,15 +24,15 @@
       </div>
 
       <div class="mt-auto w-full flex justify-center items-end bg-transparent">
-  <img 
-    src="/img_part.png" 
-    alt="Visual Partner Team" 
-    data-aos="fade-up"
-    data-aos-anchor-placement="top-bottom"
-    class="w-full h-auto max-w-[1440px] block align-bottom"
-    @load="onImgLoad"
-  />
-</div>
+        <img 
+          src="/img_part.webp" 
+          alt="Visual Partner Team" 
+          loading="eager"
+          fetchpriority="high"
+          class="w-full h-auto max-w-[1440px] block align-bottom"
+          @load="onImgLoad"
+        />
+      </div>
     </div>
   </section>
 </template>
@@ -46,11 +46,10 @@ onMounted(() => {
   AOS.init({
     duration: 1000,
     once: true,
-    offset: 50, // Dikurangi agar AOS muncul lebih cepat di layar kecil
+    offset: 50, 
     anchorPlacement: 'top-bottom',
   })
 
-  // Refresh untuk memastikan kalkulasi posisi tepat setelah gambar load
   window.addEventListener('load', () => {
     AOS.refresh()
   })
@@ -58,12 +57,10 @@ onMounted(() => {
 </script>
 
 <style scoped>
-/* Pastikan font-black (900) Raleway terpakai */
 .font-black {
   font-weight: 900;
 }
 
-/* Hilangkan celah 1px yang sering muncul di bawah gambar pada Safari/Chrome */
 img {
   margin-bottom: -1px;
 }
