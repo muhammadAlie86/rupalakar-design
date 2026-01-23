@@ -1,13 +1,6 @@
 <script setup>
-const clients = [
-  { name: 'Guppy', src: '/ic_guppy.png' },
-  { name: 'Enjoy Jakarta', src: '/ic_jakarta.png' },
-  { name: 'BSI', src: '/ic_bsi.png' },
-  { name: 'Schott Pharma', src: '/ic_scot.png' },
-  { name: 'Honda', src: '/ic_honda.png' },
-  { name: 'Pertamina', src: '/ic_pertamina.png' },
-  { name: 'Vov', src: '/ic_vov.png' },
-]
+
+import { clientItems } from '~/data/clientitems';
 </script>
 
 <template>
@@ -16,7 +9,7 @@ const clients = [
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-12 items-center justify-items-center">
         
         <div 
-          v-for="logo in clients" 
+          v-for="logo in clientItems" 
           :key="logo.name"
           class="w-full max-w-[180px] lg:max-w-[220px] filter  transition-all duration-500 hover:opacity-100"
         >

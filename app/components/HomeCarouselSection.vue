@@ -48,15 +48,13 @@ register()
 
 defineProps<{ slides: string[] }>()
 const swiperRef = ref<any>(null)
-const globalMuted = ref(true) // Default harus true agar autoplay jalan
+const globalMuted = ref(true) 
 
 const isVideo = (src: string) => /\.(mp4|webm|ogg)$/i.test(src)
 
-// Fungsi untuk toggle suara
 const toggleMute = () => {
   globalMuted.value = !globalMuted.value
   
-  // Terapkan langsung ke semua video yang ada di DOM agar sinkron
   const allVideos = swiperRef.value.querySelectorAll('video')
   allVideos.forEach((v: HTMLVideoElement) => {
     v.muted = globalMuted.value
@@ -82,8 +80,6 @@ onMounted(() => {
         const activeSlide = swiper.slides[swiper.activeIndex]
         const video = activeSlide.querySelector('video')
         if (video) {
-          // Tetap gunakan status globalMuted agar jika user sudah unmute, 
-          // slide berikutnya otomatis bersuara
           video.muted = globalMuted.value 
           video.play()
         }

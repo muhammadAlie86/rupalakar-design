@@ -21,15 +21,14 @@
         
         <img 
           src="/konsul_satu.png" 
-          
-    class="
-      w-full md:w-[120%] lg:w-[140%]
-      h-auto object-contain
-      transform scale-[1] md:scale-[1]
-      translate-x-[10%]
-      origin-bottom
-    "
-          alt="Hero Branding" 
+          class="
+            w-full md:w-[120%] lg:w-[140%]
+            h-auto object-contain
+            transform scale-[1] md:scale-[1]
+            translate-x-[10%]
+            origin-bottom
+          "
+                alt="Hero Branding" 
         />
       </div>
 
@@ -43,18 +42,18 @@
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           <div class="block lg:col-span-5 relative overflow-hidden">
-  <img 
-    src="/konsul_dua.png" 
-    class="
-      w-full h-auto object-contain mb-8
-    
-      lg:w-[140%] 
-      lg:transform lg:scale-[1] 
-      lg:translate-x-[5%] 
-      lg:mb-0" 
-    alt="Problem Illustration" 
-  />
-</div>
+            <img 
+              src="/konsul_dua.png" 
+              class="
+                w-full h-auto object-contain mb-8
+              
+                lg:w-[140%] 
+                lg:transform lg:scale-[1] 
+                lg:translate-x-[5%] 
+                lg:mb-0" 
+              alt="Problem Illustration" 
+            />
+          </div>
           
           <div class="lg:col-span-7 space-y-4">
           <div v-for="(item, i) in problems" :key="i" 
@@ -73,9 +72,9 @@
         </div>
         </div>
       </section>
-        <div class="text-center mb-16" data-aos="fade-up">
+      <div class="text-center mb-16" data-aos="fade-up">
           <h2 class="text-4xl lg:text-4xl xl:text-6xl text-[#D34010] font-black mb-2">Solusi Kami</h2>
-        </div>
+      </div>
       <section class="mb-0">
         <div class="flex flex-col md:flex-row gap-10 items-center mb-16">
           <div class="flex-1" data-aos="fade-up">
@@ -96,21 +95,21 @@
           </div>
           <div class="flex-1 flex justify-center" data-aos="fade-up">
             <img src="/konsul_tiga.png" 
-    class="
-      w-full h-auto object-contain mb-2
-    
-      lg:w-[140%] 
-      lg:transform lg:scale-[1] 
-      lg:translate-x-[5%] 
-      lg:mb-0" 
-    alt="Problem Illustration"  />
+              class="
+                w-full h-auto object-contain mb-2
+              
+                lg:w-[140%] 
+                lg:transform lg:scale-[1] 
+                lg:translate-x-[5%] 
+                lg:mb-0" 
+              alt="Problem Illustration"  />
           </div>
         </div>
 
        
       </section>
       <section class="bg-[#F9EBEA] py-0">
-   <div class="mx-auto w-[90%] md:w-[80%] lg:w-[90%]">
+        <div class="mx-auto w-[90%] md:w-[80%] lg:w-[90%]">
           
           <div class="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-20">
             
@@ -199,7 +198,7 @@
   </section>
 </template>
 
-<script setup>
+<script setup >
 import { ref } from 'vue'
 import { onMounted } from 'vue'
 import AOS from 'aos'

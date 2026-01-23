@@ -3,39 +3,8 @@ import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import { testimoniItems } from '~/data/testimoniitems';
 
-const data = [
-  {
-    name: "Jeremy Alvin",
-    role: "Owner VOU",
-    desc: "Yang kamu lakukan udah bener, dan saya sangat suka cara kerja tim kamu, saya rasa bisnis kamu bisa lebih daripada ini.",
-    photo: "/ja.jpeg"
-  },
-  {
-    name: "Ferdiansyah",
-    role: "Owner Toko Buku Sederhana dan Guppy Stationary",
-    desc: "Jujur saya baru tau ternyata bikin logo dan brand tuh alurnya harus kayak gini ya, dan ternyata logo-logo besar di luar sana juga bikinnya kayak gini. Ini bener-bener ilmu baru buat gue pribadi.",
-    photo: "/fediansyah.jpg"
-  },
-  {
-    name: "Firdaus",
-    role: "CEO Guppy Stationary",
-    desc: "Bener ya ma, saya makin kesini makin bisa ngerasa bahwa logo Guppy itu ada jiwanya.",
-    photo: "/firdaus.jpg"
-  },
-  {
-    name: "Lanjar Sumarno",
-    role: "Owner PT. SKL Sinar Warna",
-    desc: "Ini yang saya cari. Selama ini saya dapat agency dan studio yang bukan mecahin masalah usaha saya, tapi malah saya yang disuruh mikir sendiri. Tapi Rupalakar udah bener ngasih solusi tanpa saya harus pusing sendirian.",
-    photo: "/lanjar.jpg"
-  },
-  {
-    name: "Siti Khadijah",
-    role: "CEO PT. SKL Sinar Warna",
-    desc: "Kita beruntung banget ketemu Rupalakar. Saya salut banget dengan jalan pemikirannya yang kritis dan bisa diuji.",
-    photo: "https://ui-avatars.com/api/?name=Siti+Khadijah&background=D34010&color=fff" // Placeholder jika foto kosong
-  },
-];
 </script>
 
 <template>
@@ -51,7 +20,7 @@ const data = [
         :loop="true"
         class="testimonial-swiper"
       >
-        <SwiperSlide v-for="(item, index) in data" :key="index">
+        <SwiperSlide v-for="(item, index) in testimoniItems" :key="index">
           <div class="bg-white/50 backdrop-blur-sm rounded-3xl p-8 md:p-12 flex flex-col md:flex-row gap-8 items-start md:items-center shadow-sm">
             
             <div class="w-32 h-44 md:w-40 md:h-52 flex-shrink-0 overflow-hidden rounded-xl shadow-md border-4 border-white">
@@ -94,7 +63,6 @@ const data = [
 </template>
 
 <style scoped>
-/* Menghilangkan font default swiper agar arrow custom kita terlihat bersih */
 :deep(.swiper-button-next),
 :deep(.swiper-button-prev) {
   display: none;

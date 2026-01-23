@@ -3,7 +3,7 @@
 
     <div class="mx-auto">
 
-      <HomeCarouselSection :slides="heroSlides" />
+      <HomeCarouselSection :slides="homeVideoSlideItems" />
       
       <HomeLogoSection/>
     </div>
@@ -60,10 +60,9 @@ import { onMounted } from 'vue'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import HomeLogoSection from './HomeLogoSection.vue'
+import { homeVideoSlideItems } from '~/data/homevideoslideitems';
 
-const heroSlides = [
-  "/ic_intro.mp4"
-]
+
 
 
 onMounted(() => {
@@ -79,20 +78,16 @@ window.addEventListener('load', () => {
     AOS.refresh()
   })
 
-  // 3. Tambahan untuk Chrome: Refresh jika ada perubahan DOM (seperti Swiper)
   setTimeout(() => {
     AOS.refresh()
   }, 500)
 </script>
 <style>
 html, body {
-  /* Mencegah overscroll bounce yang mengganggu AOS */
   overscroll-behavior-y: none; 
-  /* Memastikan scroll halus tapi tetap responsif */
   scroll-behavior: smooth;
 }
 
-/* Memastikan elemen dengan skala besar tidak merusak area scroll */
 .will-change-transform {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;

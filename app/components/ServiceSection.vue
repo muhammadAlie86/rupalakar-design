@@ -13,7 +13,7 @@
 
       <div class="border-t border-black">
         <div 
-          v-for="(item, index) in services" 
+          v-for="(item, index) in serviceItems" 
           :key="item.slug"
           class="border-b border-black group"
         >
@@ -86,44 +86,14 @@
 import { ref, onMounted } from 'vue'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { serviceItems } from '~/data/serviceitems';
 
-// State
 const activeService = ref(null)
 
-// Data
-const services = [
-  { 
-    title: 'Visual Brand Identity', 
-    description: 'Menjaga visual kamu tetap jernih, relevan, dan terasa jujur.',
-    slug: 'visual-identity' 
-  },
-  { 
-    title: 'Social Media Management', 
-    description: 'Membangun kehadiran digital yang konsisten dan berdampak tinggi bagi audiens Anda.',
-    slug: 'social-media'
-  },
-  { 
-    title: 'Web Development', 
-    description: 'Membangun platform digital yang cepat, responsif, dan didesain untuk konversi.',
-    slug: 'web-development'
-  },
-  { 
-    title: 'SEO Optimizing', 
-    description: 'Meningkatkan visibilitas brand Anda agar selalu ditemukan oleh orang yang tepat.',
-    slug: 'seo'
-  },
-  { 
-    title: 'Konsultasi', 
-    description: 'Diskusi mendalam untuk menemukan identitas unik dan strategi komunikasi brand Anda.',
-    slug: 'konsultasi'
-  }
-]
 
-// Logic
 const handleToggle = (index) => {
   activeService.value = activeService.value === index ? null : index
   
-  // Memberi waktu transisi selesai sebelum merefresh deteksi scroll jika perlu
   setTimeout(() => {
     AOS.refresh()
   }, 500)
@@ -133,13 +103,12 @@ onMounted(() => {
   AOS.init({
     duration: 1000, 
     once: true,    
-    offset: 50, // Diperkecil agar lebih sensitif
+    offset: 50, 
   })
 })
 </script>
 
 <style scoped>
-/* Transisi Smooth untuk Grid Rows */
 .grid {
   display: grid;
 }

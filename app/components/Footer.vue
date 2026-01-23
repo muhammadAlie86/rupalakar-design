@@ -12,7 +12,7 @@
         <div>
           <h3 class="text-xl font-bold mb-6 border-b border-white/20 pb-2 inline-block">Contact Us</h3>
           <ul class="space-y-4">
-            <li v-for="contact in contactList" :key="contact.name" class="flex items-center gap-3 group">
+            <li v-for="contact in contactListItems" :key="contact.name" class="flex items-center gap-3 group">
               <img 
                 :src="contact.icon" 
                 :alt="contact.name" 
@@ -32,7 +32,7 @@
         <div>
           <h3 class="text-xl font-bold mb-6 border-b border-white/20 pb-2 inline-block">Follow Us</h3>
           <ul class="space-y-3">
-            <li v-for="social in socialMedia" :key="social.name" class="flex items-center gap-3 group">
+            <li v-for="social in socialMediaItems" :key="social.name" class="flex items-center gap-3 group">
               <img 
                 :src="social.icon" 
                 :alt="social.name" 
@@ -59,30 +59,7 @@
   </footer>
 </template>
 
-<script setup>
-// Data Contact Us dalam bentuk Array
-const contactList = [
-  { 
-    name: 'Email', 
-    icon: 'ic_email.png', 
-    value: 'rupalakardesign@gmail.com', 
-    link: 'mailto:rupalakardesign@gmail.com' 
-  },
-  { 
-    name: 'LinkedIn', 
-    icon: 'ic_linkedin.png', 
-    username: 'rupalakar', 
-    value: 'rupalakar', 
-    link: 'https://www.linkedin.com/company/rupalakar/about/?viewAsMember=true',
-    target: '_blank'
-  }
-]
-
-// Data Social Media
-const socialMedia = [
-  { name: 'Facebook', icon: 'ic_fb.png', username: 'rupalakar', link: 'https://facebook.com/rupalakar' },
-  { name: 'Instagram', icon: 'ic_ig.png', username: 'rupalakar', link: 'https://www.instagram.com/rupalakar.design/' },
-  { name: 'Threads', icon: 'ic_threads.png', username: 'rupalakar', link: 'https://www.threads.com/@rupalakar.design?xmt=AQF05zxiC9gpHV0dD7o2qlrO_UF-ghfP2W6rpCfRczGoXNo' },
-  { name: 'Youtube', icon: 'ic_yt.png', username: 'rupalakar', link: 'https://www.youtube.com/@rupalakar' }
-]
+<script setup >
+import { contactListItems } from '~/data/contactitems';
+import { socialMediaItems } from '~/data/socialmediaItems';
 </script>

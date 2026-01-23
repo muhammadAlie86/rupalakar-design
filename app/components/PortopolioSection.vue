@@ -8,7 +8,7 @@
     </div>
 
     <div class="relative z-500 mx-auto px-0 md:px-0">
-      <PortopolioCarouselSection :slides="slides" />
+      <PortopolioCarouselSection :slides="portofolioCarouselItems" />
       
       <div class="mx-auto mt-12 px-4 md:mt-24">
         <PortopolioGridSection />
@@ -18,10 +18,5 @@
 </template>
 
 <script setup>
-const slides = [
-  'https://picsum.photos/1600/600?random=1',
-  'https://picsum.photos/1600/600?random=2',
-  'https://picsum.photos/1600/600?random=3'
-]
-
+import { portofolioCarouselItems } from '~/data/portofoliocarouselitems';
 </script>

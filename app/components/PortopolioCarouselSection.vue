@@ -26,8 +26,6 @@
 <script setup lang="ts">
 import { ref, onMounted, nextTick } from 'vue';
 import { register } from 'swiper/element/bundle';
-
-// Daftarkan Custom Element Swiper
 register();
 
 const props = defineProps<{
@@ -54,11 +52,9 @@ onMounted(async () => {
         return `<span class="${className}" style="width: 10px; height: 10px; background: rgba(255,255,255,0.5); border-radius: 50%; cursor: pointer; display: inline-block; transition: all 0.3s"></span>`;
       },
     },
-    // Kecepatan transisi antar slide (dalam ms)
     speed: 1000,
   };
 
-  // Masukkan parameter dan inisialisasi manual
   Object.assign(swiperEl, swiperParams);
   swiperEl.initialize();
 });
@@ -66,10 +62,10 @@ onMounted(async () => {
 
 <style scoped>
 :deep(.swiper-pagination-bullet-active) {
-  background-color: #D34010 !important; /* Gunakan warna brand orange kamu */
+  background-color: #D34010 !important;
   transform: scale(1.4);
   opacity: 1 !important;
-  width: 30px !important; /* Membuat dot menjadi lonjong saat aktif */
+  width: 30px !important;
   border-radius: 5px !important;
 }
 

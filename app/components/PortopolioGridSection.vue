@@ -22,11 +22,9 @@
               <span class="text-[#D34010]"> {{ item.title }}</span>
             </h3>
             
-          <div class="p-6">
             <p class="text-black text-sm leading-relaxed mb-8 flex-grow line-clamp-3">
               {{ item.description }}
             </p>
-          </div>
             <div class="flex items-center justify-between mt-auto">
               <UButton
                 to="/contact"
