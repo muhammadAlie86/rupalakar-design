@@ -22,17 +22,6 @@
           tapi untuk membantu brand memahami dirinya dan berbicara dengan cara yang lebih jernih.
         </p>
       </div>
-
-      <div class="mt-auto w-full flex justify-center items-end bg-transparent">
-        <img 
-          src="/img_part.webp" 
-          alt="Visual Partner Team" 
-          loading="eager"
-          fetchpriority="high"
-          class="w-full h-auto max-w-[1440px] block align-bottom"
-          @load="onImgLoad"
-        />
-      </div>
     </div>
   </section>
 </template>

@@ -8,7 +8,7 @@
     </div>
 
     <div class="relative z-500 mx-auto px-0 md:px-0">
-      <PortopolioCarouselSection :slides="portofolioCarouselItems" />
+      <PortopolioCarouselSection :slides="portofolioImgItems" />
       
       <div class="mx-auto mt-12 px-4 md:mt-24">
         <PortopolioGridSection />
@@ -18,5 +18,5 @@
 </template>
 
 <script setup>
-import { portofolioCarouselItems } from '~/data/portofoliocarouselitems';
+import { portofolioImgItems } from '~/data/portofolioimgitems';
 </script>

@@ -51,6 +51,21 @@
     <div class=" px-6" >
       <HomeFooterSection />
     </div>
+    <div 
+        class="mt-auto w-full flex justify-center items-end" 
+        data-aos="fade-up" 
+        data-aos-anchor-placement="top-bottom"
+      >
+        <img 
+          src="/img_part.webp" 
+          alt="Visual Partner Team"
+          class="w-full h-auto max-w-[1020px] block align-bottom transform-gpu" 
+          decoding="sync"
+          loading="eager"
+          style="backface-visibility: hidden; -webkit-backface-visibility: hidden;"
+          @load="onImgLoad"
+        />
+      </div>
 
   </section>
 </template>
@@ -63,7 +78,12 @@ import HomeLogoSection from './HomeLogoSection.vue'
 import { homeVideoSlideItems } from '~/data/homevideoslideitems';
 
 
-
+const onImgLoad = () => {
+  console.log('Gambar sukses dimuat!')
+  if (typeof window !== 'undefined' && window.AOS) {
+    window.AOS.refresh()
+  }
+}
 
 onMounted(() => {
   AOS.init({
@@ -83,6 +103,14 @@ window.addEventListener('load', () => {
   }, 500)
 </script>
 <style>
+img[data-aos] {
+  will-change: transform, opacity;
+}
+
+.transform-gpu {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
 html, body {
   overscroll-behavior-y: none; 
   scroll-behavior: smooth;
